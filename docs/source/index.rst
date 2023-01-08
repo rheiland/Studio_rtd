@@ -17,4 +17,4 @@ Contents
 
    usage
    overview
-   tutorial_1
+   tutorials

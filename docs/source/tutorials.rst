@@ -1,10 +1,10 @@
 Tutorials
 =========
 
-.. _tutorial_1:
+.. _tutorials:
 
 
-Tutorial_1
-----------
+Template model
+--------------
 
 .. image:: ../images/studio_template_config.PNG
