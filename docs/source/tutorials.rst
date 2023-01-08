@@ -15,7 +15,7 @@ Template model
 * the Microenvironment tab where substrates and signals are defined. Just one substrate is defined in the default `template` model, but it is not used (yet).
 
 .. image:: ../images/studio_template_celltypes.PNG
- the Cell Types tab where different cell types can be defined to have different phenotypic behaviors. For the default `template` model, there is only one cell type defined (initially). Note there are subtabs which define each cell type's phenotype. If you look at some of those subtabs, you'll see that the default `template` model allows cell death and mechanics, but no motility and no secretion/uptake of the substrate.
+* the Cell Types tab where different cell types can be defined to have different phenotypic behaviors. For the default `template` model, there is only one cell type defined (initially). Note there are subtabs which define each cell type's phenotype. If you look at some of those subtabs, you'll see that the default `template` model allows cell death and mechanics, but no motility and no secretion/uptake of the substrate.
 
 .. image:: ../images/studio_template_run.PNG
 * click the `Run simulation`. Information about the overall model will quickly appear, followed by delayed output lines whenever output files are saved (based on the time intervals on the `Config Basics` tab).
@@ -27,15 +27,15 @@ Template model
 * Results (cells) at the end of the simulation (5 days).
 
 .. image:: ../images/studio_template_ICs_disk.PNG
-* the `ICs` (Initial Conditions) tab lets us define some relatively simple starting positions for cells. The output will be a .csv file containing: `x,y,z,cell type` Here, we create a disk of hexagonally packed cells. Press `Plot` to see results and `->cells.csv` to write the .csv file. You will then provide this .csv filename on the Config Basics tab.
+* the `ICs` (Initial Conditions) tab, let's define some relatively simple starting positions for cells. The output will be a .csv file containing: `x,y,z,cell type` Here, we create a disk of hexagonally packed cells. Press `Plot` to see results and `->cells.csv` to write the .csv file. You will then provide this .csv filename on the Config Basics tab.
 
 .. image:: ../images/studio_template_config_ICs_enable_csv.PNG
- In the `Config Basics` tab, we need to :heavy_check_mark: enable the cells.csv and change the folder to be "."
+* In the `Config Basics` tab, we need to :heavy_check_mark: enable the cells.csv and change the folder to be "."
 
 .. image:: ../images/studio_template_user_params_no_random_cells.PNG
- the `User Params` tab defines parameters considered to be "global" to a simulation (vs. `Custom Data`, the subtab in `Cell Types` which define parameters specific to cell types). Here, we change # of randomly placed cells to be 0 (because we only want to use the cells defined in the .csv file).
+* the `User Params` tab defines parameters considered to be "global" to a simulation (vs. `Custom Data`, the subtab in `Cell Types` which define parameters specific to cell types). Here, we change # of randomly placed cells to be 0 (because we only want to use the cells defined in the .csv file).
 
-.. image:: ../images/studio_template_config_ICs_folder.PNG
+.. comment_line image:: ../images/studio_template_config_ICs_folder.PNG
 
 
 .. image:: ../images/studio_template_run_disk.PNG
