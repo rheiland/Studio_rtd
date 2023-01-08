@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'PhysiCell Studio'
+copyright = '2023, RandyHeiland, Paul Macklin'
+author = 'Heiland'
 
 release = '0.1'
 version = '0.1.0'
