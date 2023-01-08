@@ -33,7 +33,7 @@ Template model: disk for ICs
 * the `ICs` (Initial Conditions) tab, let's define some relatively simple starting positions for cells. The output will be a .csv file containing: `x,y,z,cell type` Here, we create a disk of hexagonally packed cells. Press `Plot` to see results and `->cells.csv` to write the .csv file. You will then provide this .csv filename on the Config Basics tab.
 
 .. image:: ../images/studio_template_config_ICs_enable_csv.PNG
-* In the `Config Basics` tab, we need to :heavy_check_mark: enable the cells.csv and change the folder to be "."
+* In the `Config Basics` tab, we need to enable (check) the cells.csv and change the folder to be "."
 
 .. image:: ../images/studio_template_user_params_no_random_cells.PNG
 * the `User Params` tab defines parameters considered to be "global" to a simulation (vs. `Custom Data`, the subtab in `Cell Types` which define parameters specific to cell types). Here, we change # of randomly placed cells to be 0 (because we only want to use the cells defined in the .csv file).
@@ -60,7 +60,7 @@ Template model: diffusion
 * In the `Microenvironment` tab, set the diffusion coef=1000, decay rate=0, and Dirichlet Boundary Conditions=38. In the `Run` tab, run the simulation.
 
 .. image:: ../images/template_diffusion_plot5min.png
-* In the `Plot` tab, :heavy_check_mark: Substrates to display them and :heavy_check_mark: "fix" to fix absolute values for the color map (cmin=0, cmax=38, and press Enter after changing those values). Then plot the results at 5 mins.
+* In the `Plot` tab, **check** "Substrates" to display them and **check** "fix" to fix absolute values for the color map (cmin=0, cmax=38, and press Enter after changing those values). Then plot the results at 5 mins.
 
 .. image:: ../images/template_diffusion_plot2hrs.png
 * Plot the results at the end of the simulation (2 hrs). Note the substrate has diffused throughout the domain from the boundaries.
