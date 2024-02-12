@@ -15,6 +15,8 @@ Contents
 
 .. toctree::
 
-   usage
    overview
+   usage
    tutorials
+   gallery
+   publications
