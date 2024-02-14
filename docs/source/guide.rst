@@ -10,9 +10,6 @@ This User Guide provides brief, but hopefully sufficient, guidance on using the 
 This Guide will be updated as the Studio itself is updated, however there may be a lag. Therefore, if you are running a recent release of the Studio, you may notice some differences in the content described here.
 
 
-.. image:: ./guide_imgs/tabs_only.png
-* The top-level tabs of the Studio that allow model objects and parameters to be edited.
-
 Running
 -------
 
@@ -34,3 +31,46 @@ Each tab will be described in detail in the sections below, but briefly they are
 * `ICs` - convenience functionality to define simple 2D initial conditions (ICs) for cells
 * `Run` - run a simulation and show the normal PhysiCell output to the terminal
 * `Plot` - provide plotting options for visualizing output results (even while the simulation is being run)
+
+Sample model: virus-macrophage
+------------------------------
+
+We will illustrate the Studio using the PhysiCell virus-macrophage model, i.e., we assume you have created
+this model:
+
+.. code-block:: console
+  ~/PhysiCell$ make reset
+  ~/PhysiCell$ make virus-macrophage-sample
+  ~/PhysiCell$ make 
+
+If the resulting config/PhysiCell_settings.xml is in a "flattened" format (which the Studio requires)
+then you should be able to run:
+
+.. code-block:: console
+  ~/PhysiCell$ python studio/bin/studio.py -p -e virus-sample
+
+# However, if you happen to have an older, hierarchical .xml format then you will need to use the flattened one in the studio folder:
+
+.. code-block:: console
+  ~/PhysiCell$ python studio/bin/studio.py -c studio/config/virus_macrophage.xml -e virus-sample
+
+Config Basics
+-------------
+
+.. image:: ./guide_imgs/config_virus.png
+   :width: 500px
+
+* === Domain ===
+* define the model domain size (we recommend leaving dx=dy=dz=20). A 2D model will have Z range: [-dz/2, dz/2, dz]
+* === Times ===
+* `Max Time` - of the simulation. `+1 day` convenience button to add 1440 mins (1 day)
+* `Diffusion/Mechanics/Phenotype dt` - 3 time scales in a PhysiCell model (rf. the PhysiCell method paper). Only modify if you're an advanced user.
+* === Misc runtime params ===
+* `# threads` - # of OpenMP threads (to help speed up calculations)
+* `output folder` - where the output files will be written; relative to where you Run the simulation.
+* `Save data(intervals)` - there are (primarily) two types of output files saved by PhysiCell: `SVG` (.svg; for cells' positions, sizes, colors) and `Full` (.mat; for substrate concentrations and custom data). Currently, in the Plot tab, when you plot *both* cells and substrates, it assumes those files were written at the same simulation time. Therefore, you should provide the *same* interval value for both if you plan to plot both. The `Sync` checkbox helps ensure this. However, if you only plan to plot cells' SVG files, then you can set the `Full` interval to a very high value or simply uncheck it to not have any substrate or cells' custom data saved.
+* `Plot SVG substrate` - option to also plot a substrate concentration in the .svg files. If this is enabled, you will need to provide the proper arguments to the `SVG_plot` function in your main.cpp (namely, a custom coloring function for the selected substrate). Refer to the `interaction` sample project for an example.
+* === Initial conditions of cells ===
+* `enable` - check if you are providing a text file that contains data for the initial conditions of cells, including their positions, cell types, etc.
+* === Cells' global behaviors
+*  `virtual walls` - if checked, indicates that cells should be nudged away from the domain boundaries when they get too close
