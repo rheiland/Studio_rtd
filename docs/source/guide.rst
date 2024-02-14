@@ -58,7 +58,6 @@ Config Basics
 -------------
 
 .. image:: ./guide_imgs/config_virus.png
-   :width: 500px
 
 * === Domain ===
 * define the model domain size (we recommend leaving dx=dy=dz=20). A 2D model will have Z range: [-dz/2, dz/2, dz]
@@ -74,3 +73,30 @@ Config Basics
 * `enable` - check if you are providing a text file that contains data for the initial conditions of cells, including their positions, cell types, etc.
 * === Cells' global behaviors
 *  `virtual walls` - if checked, indicates that cells should be nudged away from the domain boundaries when they get too close
+
+## Microenvironment
+
+.. image:: ./guide_imgs/microenv_virus.png
+
+* Define the substrates (or signals) used in the model
+* Selecting one in the box on the left will update the parameters on the right.
+* The `New` button will create a new substrate with default parameters
+* The `Copy` button will create a new substrate with the same parameters as the currently selected substrate
+* The `Delete` button will delete the currently selected substrate
+* To rename a substrate, double-click it, modify the name, and press the Enter/Return key
+* The parameters on the right should be mostly self-explanatory. However, note that the `Dirichlet BC`(Boundary Condition) `Apply to all` button only copies the value provided to each of the boundaries. It does *not* toggle on (enable) those boundaries. You must explicitly enable any boundary that you want to be Dirichlet conditions.
+* `calculate gradients` - check if you want substrate gradients to be computed at each "Mechanics dt" timestep. You would need to do so, for example, if certain cell types were chemotaxing (rf. Cell Types | Motility subtab).
+* `track in agents` - check if you want cells to keep track of the substrate concentration during secretion
+
+
+Cell Types
+----------
+
+.. image:: ./guide_imgs/celltypes_virus.png
+
+* This tab is used to define one or more cell types and the phenotype for each. Therefore it exposes a large number of parameters. Note that it has subtabs, one for each phenotypic cell behavior.
+* On the left is a table of all cell types defined. You can create a `New` one which will be populated with default PhysiCell parameter values, or make a `Copy` of the currrently selected cell type, or `Delete` the selected one. Creating new cell types will always be appended at the end of the table and will be assigned a name with a random 3-character suffix. You should rename them to be more meaningful to your model. (The table should maintain a sequential numbering of cell type IDs, starting with 0.)
+* You can rename a cell type by double-clicking its name, typing a new name, and pressing Enter.
+* WARNING! Currently, if you rename or delete a cell type, we do not automatically update any rules (in the Rules tab) that used them. However, if you quit the Studio and restart it with the same config file, it will perform a validation check of the cell type names used in Rules and let you know if some reference undefined cell types (and simply not insert those into the rules table).
+* On the right, the `Reset to PhysiCell defaults` does just that - it resets all parameter values to their defaults in the core PhysiCell code. This can be useful if you have been experimenting with different parameter values to see the effect they have on your model, but then decide to do a "reset" of the parameters in this section. This same button appears on the other phenotype subtabs and applies to the parameters in each. WARNING: some tabs have dropdown widgets that contain either a list of all substrates or a list of all cell types. The outcome of the `Reset to PhysiCell defaults` will be to reset parameters associated with EVERY object in the dropdown(s). This will likely change in the future.
+
