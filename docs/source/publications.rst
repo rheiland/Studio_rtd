@@ -7,13 +7,15 @@ Publications
 
 `PhysiCell: An open source physics-based cell simulator for 3-D multicellular systems <https://doi.org/10.1371/journal.pcbi.1005991>`_
 
+Papers that did not just cite PhysiCell, but actually used it. Work in process...
+
 2024
 ----
 
-Coming...
 
 2023
 ----
+`Development and application of an agent-based model forthe simulation of the extravasation process of circulatingtumor cells <https://doi.org/10.1002/cnm.3679>`_
 
 2022
 ----

@@ -9,7 +9,6 @@ Template model: default
 
 .. image:: ../images/studio_template_config.PNG
 * the Configuration Basics tab that defines the domain and various high-level simulation parameters
-------------
 
 .. image:: ../images/studio_template_microenv.PNG
 * the Microenvironment tab where substrates and signals are defined. Just one substrate is defined in the default `template` model, but it is not used (yet).

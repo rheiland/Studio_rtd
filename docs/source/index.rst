@@ -1,5 +1,5 @@
 PhysiCell Studio
-===================================
+================
 
 PhysiCell Studio is a graphical tool to allow the creation and editing of a PhysiCell (.xml) model.
 
@@ -15,8 +15,9 @@ Contents
 
 .. toctree::
 
-   overview
+   introduction
    usage
+   guide
    tutorials
    gallery
    publications
