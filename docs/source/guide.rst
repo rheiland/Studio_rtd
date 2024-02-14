@@ -74,7 +74,8 @@ Config Basics
 * === Cells' global behaviors
 *  `virtual walls` - if checked, indicates that cells should be nudged away from the domain boundaries when they get too close
 
-## Microenvironment
+Microenvironment
+----------------
 
 .. image:: ./guide_imgs/microenv_virus.png
 
@@ -99,4 +100,18 @@ Cell Types
 * You can rename a cell type by double-clicking its name, typing a new name, and pressing Enter.
 * WARNING! Currently, if you rename or delete a cell type, we do not automatically update any rules (in the Rules tab) that used them. However, if you quit the Studio and restart it with the same config file, it will perform a validation check of the cell type names used in Rules and let you know if some reference undefined cell types (and simply not insert those into the rules table).
 * On the right, the `Reset to PhysiCell defaults` does just that - it resets all parameter values to their defaults in the core PhysiCell code. This can be useful if you have been experimenting with different parameter values to see the effect they have on your model, but then decide to do a "reset" of the parameters in this section. This same button appears on the other phenotype subtabs and applies to the parameters in each. WARNING: some tabs have dropdown widgets that contain either a list of all substrates or a list of all cell types. The outcome of the `Reset to PhysiCell defaults` will be to reset parameters associated with EVERY object in the dropdown(s). This will likely change in the future.
+
+
+Cycle
+*****
+
+Death
+*****
+
+User Params
+-----------
+
+.. image:: ./guide_imgs/user_params_virus.png
+
+User parameters are general model parameters (as opposed to Cell Types | Custom Data parameters which are specific to cell data). User parameters are accessed in your model's C++ code. Search for `parameters.ints, parameters.doubles`, etc, in various sample projects' `custom.cpp` files. You can click/drag a column separator in this table to change its width. (Unfortunately, that column width information is not retained if you exit the Studio and start it again)
 
