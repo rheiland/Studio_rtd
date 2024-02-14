@@ -3,8 +3,13 @@ Gallery
 
 .. _gallery:
 
-Gallery
--------
+Work in progress...
 
-Coming...
+template
+--------
+
+.. image:: ./gallery_imgs/template1.png
+   :width: 240px
+
+
 

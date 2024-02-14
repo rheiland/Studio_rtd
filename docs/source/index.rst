@@ -16,7 +16,6 @@ Contents
 .. toctree::
 
    introduction
-   usage
    guide
    tutorials
    gallery

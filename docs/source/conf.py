@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'PhysiCell Studio'
-copyright = '2023, Randy Heiland, Paul Macklin'
+copyright = '2024, Randy Heiland, Paul Macklin'
 author = 'Heiland'
 
 release = '0.1'
