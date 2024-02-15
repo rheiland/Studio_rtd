@@ -108,10 +108,87 @@ Cycle
 Death
 *****
 
+Volume
+******
+
+Mechanics
+*********
+
+Motility
+********
+
+Secretion
+*********
+
+Interactions
+************
+
+Intracellular
+*************
+
+Custom Data
+***********
+
+
 User Params
 -----------
 
 .. image:: ./guide_imgs/user_params_virus.png
 
 User parameters are general model parameters (as opposed to Cell Types | Custom Data parameters which are specific to cell data). User parameters are accessed in your model's C++ code. Search for `parameters.ints, parameters.doubles`, etc, in various sample projects' `custom.cpp` files. You can click/drag a column separator in this table to change its width. (Unfortunately, that column width information is not retained if you exit the Studio and start it again)
+
+
+Rules
+-----
+
+.. image:: ./guide_imgs/rules_poster_demo.png
+
+This section is independent of the others in this guide in that it does not relate to the virus-macrophage sample project.
+
+The Rules tab is a recent addition to the Studio and will continue to be improved in future releases. 
+The rules functionality in PhysiCell is both powerful and elegant. A rule, for a cell type, specifies how
+that cell will respond to a specific signal. In other words, rules will determine cell behaviors. The response
+is defined by a Hill function and its parameters are also specified in this tab, along with comboboxes that
+list the Signals and Behaviors. For an introductory tutorial on using rules, see https://github.com/physicell-training/nw2023. The screenshots shown here reflect that tutorial.
+
+.. image:: ./guide_imgs/rule_pressure_cycleentry_plot.png
+
+ICs (Initial Conditions)
+------------------------
+
+The ICs tab provides a graphical tool that lets you create fairly simple initial conditions of cells. For now, those ICs are just x,y,z positions and cell type (by name or ID). The currently supported geometric regions in which cells can be placed are annuli (or disks), boxes (rectangles), rings, or single points. The center of any of those 2D regions is specified using x0,y0. R1 and R2 represent the distances/radii. For boxes, R1= (absolute) x-distance from the center to each left/right edge; R2= y-distance from the center to each top/bottom edge; For an annulus: R1= inner radius; R2= outer radius (if R1=0, the shape becomes a disk). Each region can be filled in two different ways: randomly or hex-filled. You only specify the # of cells for the random fill. o1 and o2 (omegas) represent degrees for the start/end of a ring of cells (o1,o2 in range [-360,360]). The "mod" parameter means "modulo" and is used to provide integral spacing of cells on a ring. Note that you can select a cell type from the combobox at the top. The size (radius) of each cell is determined by the Cell Types | Volume (total) parameter.
+
+.. image:: ./guide_imgs/ics_geoms.png
+
+The typical steps are: select the geometric region type, fill type (if relevant), # cells (if fill type = random), center of region, R1 and R2, or o1 and o2. Then click `Plot` to see if they appear where you expect. If not, either click `Undo last` or `Clear all`. Repeat if you have more regions to fill with ICs. When you have the ICs you want, click `Save` to write out the .csv file to the specified folder and filename. The `use cell type names` are the newer (v2 format) way of providing a cells.csv file. If that box is unchecked, the .csv file will be written with cell type IDs instead (v1 format).
+
+In the following image, we demonstrate with a simple example. Here, we have loaded the template model (hence the `default` cell type). With the selected geometric region `annulus/disk`, `random fill`, `# cells` = 100, and the specified center and radii, we click `Plot` to see the result. Note that since R1 > 0, it will indeed be an annulus; if R1=0, we would have a disk.
+
+.. image:: ./guide_imgs/ics_template_annulus_100.png
+
+In the following, we create ICs for two cell types, each in a different region.
+* `Clear all` to start fresh
+* select cell type=`default`; create a hex-filled disk; Plot
+* select cell type=`ctype2`; create a hex-filled rectangle; Plot
+* if we make a mistake for one of the Plots, use `Undo last`
+* provide a unique .csv filename instead of `cell.csv` if you want, and click `Save`
+* be sure to specify the same folder and file name in the `Config Basics` tab for ICs section there and `enable` it to be used
+
+.. image:: ./guide_imgs/ics_disk_hex.png
+.. image:: ./guide_imgs/ics_disk_rect.png
+
+
+The .csv file should contain content that looks similar to the following. Note that since we had `use cell type names` checked, each line will include the name of that cell type. Also, in this case, there will be a single header line at the top that starts with `x` (for the x-coordinate column). If we don't check the `use cell type names`, this is the older style of .csv and it will use cell IDs (integer values) instead of cell type names. And there will not be a header line.
+
+.. code-block:: console
+ x,y,z,type,volume,cycle entry,custom:GFP,custom:sample
+ -81.2695257531903,-285.4287579015727,0.0,default
+ -64.44410465728185,-285.4287579015727,0.0,default
+ -47.618683561373416,-285.4287579015727,0.0,default
+ -30.793262465464977,-285.4287579015727,0.0,default
+ ...
+ 422.0635527397712,424.27452590563917,0.0,ctype2
+ 380.0,438.8457680040665,0.0,ctype2
+ 396.82542109590844,438.8457680040665,0.0,ctype2
+ 413.65084219181693,438.8457680040665,0.0,ctype2
 
