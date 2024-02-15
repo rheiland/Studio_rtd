@@ -1,14 +1,11 @@
 PhysiCell Studio
 ================
 
-PhysiCell Studio is a graphical tool to allow the creation and editing of a PhysiCell (.xml) model.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+PhysiCell Studio is a graphical tool to make it easier to create a PhysiCell model.
 
 .. note::
 
-   This project is under active development.
+   This readthedocs documentation is under active development.
 
 Contents
 --------

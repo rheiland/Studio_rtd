@@ -141,7 +141,7 @@ Mechanics
 .. image:: ./guide_imgs/cell_mechanics_virus.png
 
 Define the volume parameters for this cell type.
-Training app: https://nanohub.org/tools/trvolume
+Training app: https://nanohub.org/tools/trmechanics
 
 
 Motility
