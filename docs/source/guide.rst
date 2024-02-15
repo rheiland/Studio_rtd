@@ -223,6 +223,7 @@ We plot .svg data from the virus-macrophage simulation. The first is at t=0 and 
 The `View` menu provides `Plot options` (in this case, for 2D plotting):
 
 .. image:: ./guide_imgs/filters2D_view_options.png
+   :width: 300px
 
 Most of these options will be self-explanatory when you use them. But note that Cells `fill` will behave differently for .svg vs .mat and  `nucleus` is currently only meaningful for .svg data. The `voxel grid` and `mech grid` pertain to the two different grids (voxel and mechanics) used in PhysiCell.  
 The `save frame*.png` will save sequentially numbered .png files in your output folder. To reset the counter, toggle off/on the checkbox. This is a first step to generating a movie (.gif or .mp4), but for now you will need to generate your own movie (via ImageMagick, etc) using the .png files as input.
@@ -240,6 +241,8 @@ Plot cells' scalars
 It is also possible to plot cells' scalar values using the `.mat` option instead of `.svg`. By default, you will have a "partial list" of scalars to choose from in the combobox widget. These are intended to be more commonly used and therefore easier to find and select.  
 
 .. image:: ./guide_imgs/cell_scalars_heterog_partiallist.png
+   :width: 300px
+
 .. image:: ./guide_imgs/cell_scalars_heterog_oncoprotein.png
 
 Note that, just as for substrate plots, you can choose from a list of predefined colormaps (`viridis`, etc) and can also fix the colormap range if you want. Otherwise, the colormap range will dynamically adjust per frame.
@@ -250,6 +253,7 @@ Note that, just as for substrate plots, you can choose from a list of predefined
 If you want the full list of scalars that have been written to the .mat files, click the `full list` button to list *all* scalars in the combobox. Note that they will be sorted alphabetically:
 
 .. image:: ./guide_imgs/cell_scalars_heterog_fulllist.png
+   :width: 300px
 
 Also, the combobox allows for a "filter" - if you type a string, e.g., "adhesion", it will display only those items with the string:
 
