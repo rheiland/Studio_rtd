@@ -116,8 +116,13 @@ Cycle
 Define the cycle parameters for this cell type. 
 Training app: https://nanohub.org/tools/trcycle
 
+We provide schematic graphs of some cell cycles (taken from the original PhysiCell User Guide; rf. it for more details).
+
 .. image:: ./guide_imgs/cycle_live.png
 .. image:: ./guide_imgs/cycle_Ki67_adv.png
+.. image:: ./guide_imgs/cycle_flow_cyto.png
+.. image:: ./guide_imgs/cycle_flow_cyto_sep.png
+.. image:: ./guide_imgs/cycle_quiescent.png
 
 
 Death
