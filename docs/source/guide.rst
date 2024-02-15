@@ -140,7 +140,7 @@ Volume
 .. image:: ./guide_imgs/cell_volume_virus.png
 
 Define the volume parameters for this cell type.
-Training app: https://nanohub.org/tools/trvolume
+Training app: https://nanohub.org/tools/trvolume2
 
 
 Mechanics
