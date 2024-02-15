@@ -129,7 +129,7 @@ Training app: https://nanohub.org/tools/trdeath
 Volume
 ******
 
-.. image:: ./guide_imgs/cell_death_virus.png
+.. image:: ./guide_imgs/cell_volume_virus.png
 
 Define the volume parameters for this cell type.
 Training app: https://nanohub.org/tools/trvolume
@@ -140,8 +140,8 @@ Mechanics
 
 .. image:: ./guide_imgs/cell_mechanics_virus.png
 
-Define the volume parameters for this cell type.
-Training app: https://nanohub.org/tools/trmechanics
+Define the mechanics parameters for this cell type. There are two basic kinds of mechanics: "normal" adhesion/repulsion between cells and spring mechanics (using the last 3 parameters).
+Training app: https://nanohub.org/tools/trmechanics (does not include spring mechanics)
 
 
 Motility
@@ -150,7 +150,8 @@ Motility
 .. image:: ./guide_imgs/cell_motility_virus_epi.png
 .. image:: ./guide_imgs/cell_motility_virus_mac.png
 
-Define the volume parameters for this cell type.
+Define the motility parameters for this cell type. In addition to basic motility, this tab also defines
+whether cells of the selected cell type are chemotaxing to/from one or more substrate/signal (advanced chemotaxis allows more than one).
 Training app: https://nanohub.org/tools/trmotility
 
 
@@ -159,7 +160,7 @@ Secretion
 
 .. image:: ./guide_imgs/cell_secretion_virus_epi.png
 
-Define the secretion parameters for this cell type.
+Define the secretion parameters for this cell type. Note that secretion can be both "out" of a cell and "in" to a cell (uptake).
 Training app: https://nanohub.org/tools/trsecretion
 
 
@@ -184,7 +185,7 @@ Custom Data
 
 .. image:: ./guide_imgs/cell_customdata_virus.png
 
-Define any custom data for this cell type.
+Cells can have custom data associated with them which can be modified during a simulation (either in C++ custom code or in Rules). Define any custom data for this cell type.
 
 User Params
 -----------
@@ -201,13 +202,13 @@ Rules
 
 This section is independent of the others in this guide in that it does not relate to the virus-macrophage sample project.
 
-The Rules tab is a recent addition to the Studio and will continue to be improved in future releases. 
 The rules functionality in PhysiCell is both powerful and elegant. A rule, for a cell type, specifies how
 that cell will respond to a specific signal. In other words, rules will determine cell behaviors. The response
 is defined by a Hill function and its parameters are also specified in this tab, along with comboboxes that
-list the Signals and Behaviors. For an introductory tutorial on using rules, see https://github.com/physicell-training/nw2023. The screenshots shown here reflect that tutorial.
+list the valid Signals and Behaviors. For an introductory tutorial on using rules, see https://github.com/physicell-training/nw2023. The screenshots shown here reflect that tutorial.
 
 .. image:: ./guide_imgs/rule_pressure_cycleentry_plot.png
+   :width: 400px
 
 ICs (Initial Conditions)
 ------------------------
