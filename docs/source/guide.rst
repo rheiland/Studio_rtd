@@ -105,6 +105,9 @@ Cell Types
 Cycle
 *****
 
+.. image:: ./guide_imgs/cycle_live.png
+.. image:: ./guide_imgs/cycle_Ki67_adv.png
+
 Death
 *****
 
