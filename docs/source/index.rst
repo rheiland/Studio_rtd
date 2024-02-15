@@ -17,6 +17,5 @@ Contents
 
    introduction
    guide
-   tutorials
    gallery
    publications

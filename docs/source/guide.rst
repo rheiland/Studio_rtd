@@ -196,3 +196,61 @@ The .csv file should contain content that looks similar to the following. Note t
  396.82542109590844,438.8457680040665,0.0,ctype2
  413.65084219181693,438.8457680040665,0.0,ctype2
 
+Run
+---
+
+The Run tab lets you run a simulation using a specific executable model and specific XML configuration file. The lower region of the tab contains your normal terminal output you would see if you ran the model from a shell window. It has a scrollbar so you can scroll back to the initial terminal output which summarizes the model parameters, prints the names of all valid Signals and Behaviors available in the Rules tab, any rulesets (from .csv), the PhysiCell version, etc..
+
+* the `Cancel` button will stop the simulation; there is not currently a Halt/Continue option
+
+.. image:: ./guide_imgs/run_virus.png
+
+
+Plot
+----
+
+When you start a simulation (using the Run tab) and output files are generated, you can begin visualizing results. In the Plot tab, click `Play` to 
+start rendering those results. The `Play` button will switch to `Pause`, so you can halt and restart easily. The two primary objects to visualize are cells and substrates, each with a checkbox toggle. Assuming you selected "SVG" in the `Config Basics` tab ("Save data" section), then .svg files will be written (at the specified time interval of the simulation) and can be plotted when the `.svg` radio button is selected. Your model's C++ code can specify unique cell colors for the SVG (related to, but not necessarily the same as, those in `Legend(.svg)` button). 
+
+Alternatively, you can plot cells' scalar values when the `.mat` radio button is selected. There are many types of scalar variables for cells that are stored in the .mat files. You can see the entire list using the `full list` button, then click the combobox above it. These scalar variables will be a combination of hard-coded ones by PhysiCell and model-specific ones defined in the `Cell Types | Custom Data` subtab. The `partial` button will populate the combobox with a more customary subset of scalar variables. Note that you can select a colorbar for the cells' scalars and can fix lower/upper bounds for the values, if that's desired. Otherwise, the colorbar will be dynamic and use the min/max of the current frame of data.
+
+We plot .svg data from the virus-macrophage simulation. The first is at t=0 and we also display the cell types color legend. Note there are only two cell types and therefore two colors in the legend. However, later in the simulation we note that some of the cells have a different color (yellow-ish). These colors are specified in a custom coloring function in the custom.cpp code. And in the third plot, we also plot the interferon signal.
+
+.. image:: ./guide_imgs/plot_virus_t0.png
+.. image:: ./guide_imgs/plot_virus_t2.png
+.. image:: ./guide_imgs/plot_virus_t2_interferon.png
+
+The `View` menu provides `Plot options` (in this case, for 2D plotting):
+
+.. image:: ./guide_imgs/filters2D_view_options.png
+
+Most of these options will be self-explanatory when you use them. But note that Cells `fill` will behave differently for .svg vs .mat and  `nucleus` is currently only meaningful for .svg data. The `voxel grid` and `mech grid` pertain to the two different grids (voxel and mechanics) used in PhysiCell.  
+The `save frame*.png` will save sequentially numbered .png files in your output folder. To reset the counter, toggle off/on the checkbox. This is a first step to generating a movie (.gif or .mp4), but for now you will need to generate your own movie (via ImageMagick, etc) using the .png files as input.
+
+---
+
+.. image:: ./guide_imgs/population_cell_type_plot_virus.png
+
+The `Population plot` button will generate a time series plot of counts of various types of discrete (categorical) data. This will appear in a separate popup window. The type of discrete data is selected from a combobox widget.
+
+
+Plot cells' scalars
+*******************
+
+It is also possible to plot cells' scalar values using the `.mat` option instead of `.svg`. By default, you will have a "partial list" of scalars to choose from in the combobox widget. These are intended to be more commonly used and therefore easier to find and select.  
+
+.. image:: ./guide_imgs/cell_scalars_heterog_partiallist.png
+.. image:: ./guide_imgs/cell_scalars_heterog_oncoprotein.png
+
+Note that, just as for substrate plots, you can choose from a list of predefined colormaps (`viridis`, etc) and can also fix the colormap range if you want. Otherwise, the colormap range will dynamically adjust per frame.
+
+.. image:: ./guide_imgs/cell_scalars_heterog_pressure.png
+.. image:: ./guide_imgs/cell_scalars_heterog_elapsedtime_in_phase.png
+
+If you want the full list of scalars that have been written to the .mat files, click the `full list` button to list *all* scalars in the combobox. Note that they will be sorted alphabetically:
+
+.. image:: ./guide_imgs/cell_scalars_heterog_fulllist.png
+
+Also, the combobox allows for a "filter" - if you type a string, e.g., "adhesion", it will display only those items with the string:
+
+.. image:: ./guide_imgs/cell_scalars_heterog_filter.png
