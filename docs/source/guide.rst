@@ -96,6 +96,9 @@ Cell Types
 .. image:: ./guide_imgs/celltypes_virus.png
 
 * This tab is used to define one or more cell types and the phenotype for each. Therefore it exposes a large number of parameters. Note that it has subtabs, one for each phenotypic cell behavior.
+
+.. image:: ./guide_imgs/cell_types_subtabs.png
+
 * On the left is a table of all cell types defined. You can create a `New` one which will be populated with default PhysiCell parameter values, or make a `Copy` of the currrently selected cell type, or `Delete` the selected one. Creating new cell types will always be appended at the end of the table and will be assigned a name with a random 3-character suffix. You should rename them to be more meaningful to your model. (The table should maintain a sequential numbering of cell type IDs, starting with 0.)
 * You can rename a cell type by double-clicking its name, typing a new name, and pressing Enter.
 * WARNING! Currently, if you rename or delete a cell type, we do not automatically update any rules (in the Rules tab) that used them. However, if you quit the Studio and restart it with the same config file, it will perform a validation check of the cell type names used in Rules and let you know if some reference undefined cell types (and simply not insert those into the rules table).
@@ -105,33 +108,83 @@ Cell Types
 Cycle
 *****
 
+.. image:: ./guide_imgs/cell_cycle_virus.png
+
+Define the cycle parameters for this cell type. 
+Training app: https://nanohub.org/tools/trcycle
+
 .. image:: ./guide_imgs/cycle_live.png
 .. image:: ./guide_imgs/cycle_Ki67_adv.png
+
 
 Death
 *****
 
+.. image:: ./guide_imgs/cell_death_virus.png
+
+Define the death parameters for this cell type.
+Training app: https://nanohub.org/tools/trdeath
+
+
 Volume
 ******
+
+.. image:: ./guide_imgs/cell_death_virus.png
+
+Define the volume parameters for this cell type.
+Training app: https://nanohub.org/tools/trvolume
+
 
 Mechanics
 *********
 
+.. image:: ./guide_imgs/cell_mechanics_virus.png
+
+Define the volume parameters for this cell type.
+Training app: https://nanohub.org/tools/trvolume
+
+
 Motility
 ********
+
+.. image:: ./guide_imgs/cell_motility_virus_epi.png
+.. image:: ./guide_imgs/cell_motility_virus_mac.png
+
+Define the volume parameters for this cell type.
+Training app: https://nanohub.org/tools/trmotility
+
 
 Secretion
 *********
 
+.. image:: ./guide_imgs/cell_secretion_virus_epi.png
+
+Define the secretion parameters for this cell type.
+Training app: https://nanohub.org/tools/trsecretion
+
+
 Interactions
 ************
+
+.. image:: ./guide_imgs/cell_interactions_virus.png
+
+Define the interaction parameters for this cell type.
+
 
 Intracellular
 *************
 
+.. image:: ./guide_imgs/cell_intracellular_virus.png
+
+Define the intracellular parameters for this cell type.
+
+
 Custom Data
 ***********
 
+.. image:: ./guide_imgs/cell_customdata_virus.png
+
+Define any custom data for this cell type.
 
 User Params
 -----------
