@@ -49,7 +49,7 @@ then you should be able to run:
 
 .. code-block:: console
 
-  ~/PhysiCell$ python studio/bin/studio.py -p -e virus-sample
+  ~/PhysiCell$ python studio/bin/studio.py -e virus-sample
 
 # However, if you happen to have an older, hierarchical .xml format then you will need to use the flattened one in the studio folder:
 
@@ -70,7 +70,7 @@ Config Basics
 * === Misc runtime params ===
 * `# threads` - # of OpenMP threads (to help speed up calculations)
 * `output folder` - where the output files will be written; relative to where you Run the simulation.
-* `Save data(intervals)` - there are (primarily) two types of output files saved by PhysiCell: `SVG` (.svg; for cells' positions, sizes, colors) and `Full` (.mat; for substrate concentrations and custom data). Currently, in the Plot tab, when you plot *both* cells and substrates, it assumes those files were written at the same simulation time. Therefore, you should provide the *same* interval value for both if you plan to plot both. The `Sync` checkbox helps ensure this. However, if you only plan to plot cells' SVG files, then you can set the `Full` interval to a very high value or simply uncheck it to not have any substrate or cells' custom data saved.
+* `Save data(intervals)` - there are (primarily) two types of output files saved by PhysiCell: `SVG` (.svg (ASCII); for cells' positions, sizes, colors) and `Full` (.mat (binary); for substrate concentrations and custom data). Currently, in the Plot tab, when you plot *both* cells and substrates, it assumes those files were written at the same simulation time. Therefore, you should provide the *same* interval value for both if you plan to plot both. The `Sync` checkbox helps ensure this. However, if you only plan to plot cells' SVG files, then you can set the `Full` interval to a very high value or simply uncheck it to not have any substrate or cells' custom data saved.
 * `Plot SVG substrate` - option to also plot a substrate concentration in the .svg files. If this is enabled, you will need to provide the proper arguments to the `SVG_plot` function in your main.cpp (namely, a custom coloring function for the selected substrate). Refer to the `interaction` sample project for an example.
 * === Initial conditions of cells ===
 * `enable` - check if you are providing a text file that contains data for the initial conditions of cells, including their positions, cell types, etc.
