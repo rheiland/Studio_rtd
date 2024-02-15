@@ -39,6 +39,7 @@ We will illustrate the Studio using the PhysiCell virus-macrophage model, i.e., 
 this model:
 
 .. code-block:: console
+
   ~/PhysiCell$ make reset
   ~/PhysiCell$ make virus-macrophage-sample
   ~/PhysiCell$ make 
@@ -47,11 +48,13 @@ If the resulting config/PhysiCell_settings.xml is in a "flattened" format (which
 then you should be able to run:
 
 .. code-block:: console
+
   ~/PhysiCell$ python studio/bin/studio.py -p -e virus-sample
 
 # However, if you happen to have an older, hierarchical .xml format then you will need to use the flattened one in the studio folder:
 
 .. code-block:: console
+
   ~/PhysiCell$ python studio/bin/studio.py -c studio/config/virus_macrophage.xml -e virus-sample
 
 Config Basics
@@ -208,7 +211,7 @@ is defined by a Hill function and its parameters are also specified in this tab,
 list the valid Signals and Behaviors. For an introductory tutorial on using rules, see https://github.com/physicell-training/nw2023. The screenshots shown here reflect that tutorial.
 
 .. image:: ./guide_imgs/rule_pressure_cycleentry_plot.png
-   :width: 400px
+   :width: 500px
 
 ICs (Initial Conditions)
 ------------------------
@@ -242,6 +245,7 @@ In the following, we create ICs for two cell types, each in a different region.
 The .csv file should contain content that looks similar to the following. Note that since we had `use cell type names` checked, each line will include the name of that cell type. Also, in this case, there will be a single header line at the top that starts with `x` (for the x-coordinate column). If we don't check the `use cell type names`, this is the older style of .csv and it will use cell IDs (integer values) instead of cell type names. And there will not be a header line.
 
 .. code-block:: console
+
  x,y,z,type,volume,cycle entry,custom:GFP,custom:sample
  -81.2695257531903,-285.4287579015727,0.0,default
  -64.44410465728185,-285.4287579015727,0.0,default
