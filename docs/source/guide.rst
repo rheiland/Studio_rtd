@@ -167,14 +167,18 @@ In the following image, we demonstrate with a simple example. Here, we have load
 .. image:: ./guide_imgs/ics_template_annulus_100.png
 
 In the following, we create ICs for two cell types, each in a different region.
+
 * `Clear all` to start fresh
+
 * select cell type=`default`; create a hex-filled disk; Plot
+
 * select cell type=`ctype2`; create a hex-filled rectangle; Plot
 * if we make a mistake for one of the Plots, use `Undo last`
 * provide a unique .csv filename instead of `cell.csv` if you want, and click `Save`
 * be sure to specify the same folder and file name in the `Config Basics` tab for ICs section there and `enable` it to be used
 
 .. image:: ./guide_imgs/ics_disk_hex.png
+
 .. image:: ./guide_imgs/ics_disk_rect.png
 
 
