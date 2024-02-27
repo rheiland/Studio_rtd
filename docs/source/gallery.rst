@@ -38,6 +38,10 @@ biorobots
    :width: 200px
 .. image:: ./gallery_imgs/biorobots_12hr_cargo_signal.png
    :width: 200px
+|
+.. raw:: html
+
+   <video controls src="_static/biorobots.mp4"></video>
 
 * 3 cell/agent types: director, cargo, and worker
 * 2 substrates (signals): director, cargo
