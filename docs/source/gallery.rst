@@ -69,9 +69,6 @@ In the video, we are selecting different substrates to plot in the Studio.
 * 3 cell types: cancer, cargo, and worker
 * 3 substrates: oxygen, chemoattractant, therapeutic
 
-celltypes3
-----------
-
 heterogeneity
 -------------
 
@@ -94,4 +91,24 @@ the "full" (.mat, not .svg) output files.
 
 * 1 cell type: cancer
 * 1 substrate: oxygen
+
+worm
+----
+
+A sample project that shows advanced interaction testing and contact testing. (However, this functionality pre-dated the
+ability to do so in XML, so it is all performed in custom.cpp).
+Individual cells aggregate based on chemotaxis towards a secreted quorum factor and test for contacts. 
+Cells can form a maximum of `n` (default: 2) attachments with the built-in spring functions. 
+Cells on the ends (1 attachment) hold a steady expression of a differentiation function (`head`). 
+This factor is exchanged between interior cells (2 attachments) to model juxtacrine signaling, using a contact function. 
+End cells determine if they are a head or a tail based by comparing their expression with their linked neighbor. This introduces asymmmetry that allows the "worms" to crawl directionally. 
+Cells exchange a differentiation factor across their contacts to model juxtacrine signaling. To help support contact interaction modeling, there are search functions to report a vector of Cells that are nearby for use in your contact interactions. The default mechanics function also records a list of all currently (mechanically) interacting cells in state.neighbors.
+
+
+.. raw:: html
+
+   <video controls src="_static/worm.mp4"></video>
+
+* 1 cell type: worm
+* 1 substrate: signal
 
