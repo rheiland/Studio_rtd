@@ -38,7 +38,6 @@ biorobots
    :width: 200px
 .. image:: ./gallery_imgs/biorobots_12hr_cargo_signal.png
    :width: 200px
-|
 .. raw:: html
 
    <video controls src="_static/biorobots.mp4"></video>
@@ -65,6 +64,7 @@ Similar to the biorobots sample, but now delivering a drug to treat a tumor. The
 .. raw:: html
 
    <video controls src="_static/cancer_bots.mp4"></video>
+In the video, we are selecting different substrates to plot in the Studio.
 
 * 3 cell types: cancer, cargo, and worker
 * 3 substrates: oxygen, chemoattractant, therapeutic
@@ -86,8 +86,11 @@ the "full" (.mat, not .svg) output files.
    :width: 200px
 .. image:: ./gallery_imgs/hetero_15days.png
    :width: 200px
-.. image:: ./gallery_imgs/hetero_32days.png
+.. image:: ./gallery_imgs/hetero_27days.png
    :width: 200px
+.. raw:: html
+
+   <video controls src="_static/hetero.mp4"></video>
 
 * 1 cell type: cancer
 * 1 substrate: oxygen
