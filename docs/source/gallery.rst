@@ -45,7 +45,7 @@ biorobots
 
 * 3 cell/agent types: director, cargo, and worker
 * 2 substrates (signals): director, cargo
-* workers pickup and deliver cargo to directors, using chemotaxis to signals
+* workers (red) pick up and deliver cargo (blue) to directors (green), using chemotaxis to signals
 
 cancer biorobots
 ----------------
@@ -62,6 +62,9 @@ Similar to the biorobots sample, but now delivering a drug to treat a tumor. The
    :width: 300px
 .. image:: ./gallery_imgs/cancerbots_userparams.png
    :width: 300px
+.. raw:: html
+
+   <video controls src="_static/cancer_bots.mp4"></video>
 
 * 3 cell types: cancer, cargo, and worker
 * 3 substrates: oxygen, chemoattractant, therapeutic
