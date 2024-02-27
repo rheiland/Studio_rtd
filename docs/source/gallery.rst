@@ -87,7 +87,7 @@ the "full" (.mat, not .svg) output files.
 .. image:: ./gallery_imgs/hetero_15days.png
    :width: 200px
 .. image:: ./gallery_imgs/hetero_27days.png
-   :width: 200px
+   :width: 500px
 .. raw:: html
 
    <video controls src="_static/hetero.mp4"></video>
