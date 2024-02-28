@@ -11,9 +11,11 @@ Funding
   * National Science Foundation (1720625, 1818187)
 
 * Training Materials:
+
   * Administrative supplement to NCI U01CA232137 (Year 2)
 
 * Other Funding:
+
   * NCI / DOE / Frederick National Lab for Cancer Research (21X126F)
   * DOD / Defense Threat Reduction Agency (HDTRA12110015)
   * NIH Common Fund (3OT2OD026671-01S4)
