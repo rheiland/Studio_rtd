@@ -86,10 +86,9 @@ the "full" (.mat, not .svg) output files.
    :width: 200px
 .. image:: ./gallery_imgs/hetero_27days.png
    :width: 500px
-.. raw:: html
+.. only:: html
 
-   <video controls src="_static/hetero.mp4"></video>
-
+   .. figure:: _static/hetero.gif
 * 1 cell type: cancer
 * 1 substrate: oxygen
 
@@ -107,10 +106,10 @@ Showing the uptake rate of virus for epi cells.
    :width: 250px
 .. image:: ./gallery_imgs/virus_mac_18hr.png
    :width: 250px
-.. raw:: html
+.. only:: html
 
-   <video controls src="_static/virus_mac.mp4"></video>
-It goes fast, but part way through the video, we first plot the virus (substrate) then the interferon. You can slow down the playback speed in the controls.
+   .. figure:: _static/virus_mac.gif
+It goes fast, but part way through the video, we first plot the virus (substrate) then the interferon. 
 
 * 2 cell types: epithelial cell, macrophage
 * 2 substrates: virus, interferon
@@ -127,10 +126,9 @@ This factor is exchanged between interior cells (2 attachments) to model juxtacr
 End cells determine if they are a head or a tail based by comparing their expression with their linked neighbor. This introduces asymmmetry that allows the "worms" to crawl directionally. 
 Cells exchange a differentiation factor across their contacts to model juxtacrine signaling. To help support contact interaction modeling, there are search functions to report a vector of Cells that are nearby for use in your contact interactions. The default mechanics function also records a list of all currently (mechanically) interacting cells in state.neighbors.
 
+.. only:: html
 
-.. raw:: html
-
-   <video controls src="_static/worm.mp4"></video>
+   .. figure:: _static/worm.gif
 
 * 1 cell type: worm
 * 1 substrate: signal
