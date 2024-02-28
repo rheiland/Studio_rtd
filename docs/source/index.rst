@@ -16,3 +16,4 @@ Contents
    guide
    gallery
    publications
+   funding
