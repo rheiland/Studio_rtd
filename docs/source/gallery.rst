@@ -100,6 +100,8 @@ Virus particles diffuse through the microenvironment, are uptaken by cells, repl
 
 .. image:: ./gallery_imgs/virus_mac_uptake.png
    :width: 500px
+Showing the uptake rate of virus for epi cells.
+
 .. image:: ./gallery_imgs/virus_mac_t0.png
    :width: 250px
 .. image:: ./gallery_imgs/virus_mac_18hr.png
@@ -107,6 +109,7 @@ Virus particles diffuse through the microenvironment, are uptaken by cells, repl
 .. raw:: html
 
    <video controls src="_static/virus_mac.mp4"></video>
+It goes fast, but part way through the video, we first plot the virus (substrate) then the interferon. You can slow down the playback speed in the controls.
 
 * 2 cell types: epithelial cell, macrophage
 * 2 substrates: virus, interferon
