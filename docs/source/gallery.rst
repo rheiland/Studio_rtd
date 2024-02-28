@@ -39,6 +39,10 @@ biorobots
 .. image:: ./gallery_imgs/biorobots_12hr_cargo_signal.png
    :width: 200px
 
+.. only:: html
+
+   .. figure:: _static/biorobots.gif
+
 |
 .. raw:: html
 
