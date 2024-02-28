@@ -38,6 +38,8 @@ biorobots
    :width: 200px
 .. image:: ./gallery_imgs/biorobots_12hr_cargo_signal.png
    :width: 200px
+
+|
 .. raw:: html
 
    <video controls src="_static/biorobots.mp4"></video>
