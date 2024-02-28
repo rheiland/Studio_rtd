@@ -92,6 +92,25 @@ the "full" (.mat, not .svg) output files.
 * 1 cell type: cancer
 * 1 substrate: oxygen
 
+
+virus-macrophage
+----------------
+
+Virus particles diffuse through the microenvironment, are uptaken by cells, replicate within cells, and trigger lytic death after reaching a threshold. Lysed cells release their virus particles to further diffuse through the environment. Macrophages move by random migration, test for contact with cells, and ingest / phagocytose cells based upon their viral load. Macrophages degrade their internalized viral particles.
+
+.. image:: ./gallery_imgs/virus_mac_uptake.png
+   :width: 500px
+.. image:: ./gallery_imgs/virus_mac_t0.png
+   :width: 250px
+.. image:: ./gallery_imgs/virus_mac_18hr.png
+   :width: 250px
+.. raw:: html
+
+   <video controls src="_static/virus_mac.mp4"></video>
+
+* 2 cell types: epithelial cell, macrophage
+* 2 substrates: virus, interferon
+
 worm
 ----
 
