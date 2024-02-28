@@ -42,12 +42,6 @@ biorobots
 .. only:: html
 
    .. figure:: _static/biorobots.gif
-
-|
-.. raw:: html
-
-   <video controls src="_static/biorobots.mp4"></video>
-
 * 3 cell/agent types: director, cargo, and worker
 * 2 substrates (signals): director, cargo
 * workers (red) pick up and deliver cargo (blue) to directors (green), using chemotaxis to signals
@@ -67,9 +61,10 @@ Similar to the biorobots sample, but now delivering a drug to treat a tumor. The
    :width: 300px
 .. image:: ./gallery_imgs/cancerbots_userparams.png
    :width: 300px
-.. raw:: html
 
-   <video controls src="_static/cancer_bots.mp4"></video>
+.. only:: html
+
+   .. figure:: _static/cancer_bots.gif
 In the video, we are selecting different substrates to plot in the Studio.
 
 * 3 cell types: cancer, cargo, and worker
