@@ -11,11 +11,9 @@ template
 .. image:: ./gallery_imgs/template1.png
    :width: 200px
 
-|
-.. raw:: html
+.. only:: html
 
-   <video controls src="_static/template_prolif_death.mp4"></video>
-
+   .. figure:: _static/template.gif
 A very simple model that has 1 cell type ("default") and 1 (unused) substrate ("substrate"). The number of initial cells (=5) are specified as a `User Parameter`. The simulation time is 5 days and results are output every hour. This cell type has a phenotype that includes:
 
 * cell cycle resulting in proliferation
