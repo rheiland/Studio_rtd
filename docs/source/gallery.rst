@@ -8,9 +8,6 @@ Work in progress...
 template
 --------
 
-.. image:: ./gallery_imgs/template1.png
-   :width: 200px
-
 .. only:: html
 
    .. figure:: _static/template.gif
