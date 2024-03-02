@@ -109,6 +109,22 @@ It goes fast, but part way through the video, we first plot the virus (substrate
 * 2 cell types: epithelial cell, macrophage
 * 2 substrates: virus, interferon
 
+interaction
+-----------
+
+Complex interaction between multiple cell types and signals. Refer to the custom C++ phenotype functions https://github.com/MathCancer/PhysiCell/blob/master/sample_projects/interactions/custom_modules/custom.cpp
+
+.. image:: ./gallery_imgs/interaction_t0.png
+   :width: 400px
+.. image:: ./gallery_imgs/interaction_cd8.png
+   :width: 400px
+.. only:: html
+
+   .. figure:: _static/interaction.gif
+
+* 7 cell types: bacteria, blood vessel, stem, differentiated, macrophage, CD8+ T cell, neutrophil
+* 5 substrates: resource, toxin, quorum, pro-inflammatory, debris
+
 worm
 ----
 
