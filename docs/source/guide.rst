@@ -193,7 +193,9 @@ Custom Data
 
 .. image:: ./guide_imgs/cell_customdata_virus.png
 
-Cells can have custom data associated with them which can be modified during a simulation (either in C++ custom code or in Rules). Define any custom data for this cell type.
+Cells can have custom data (parameters) associated with them which can be modified during a simulation (either in C++ custom code or in Rules). The `value` provided in the table is the initial value each cell of that cell type
+has at the start of a simulation. A custom data parameter can be plotted (Plot tab) by selecting the ".mat" option
+for cells then selecting the name of the custom parameter in the dropdown widget.
 
 User Params
 -----------
