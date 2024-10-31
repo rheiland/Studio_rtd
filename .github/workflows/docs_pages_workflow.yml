@@ -33,6 +33,12 @@ jobs:
        chmod +x docs/build.sh
        "docs/build.sh"
       shell: bash
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+       name: github-pages
+       path: html/
       
   deploy:
     environment:
