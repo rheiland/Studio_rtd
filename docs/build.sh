@@ -6,12 +6,16 @@
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme
 
+python3 -m pip install --upgrade
+pip uninstall docutils
+pip install docutils
+
 pwd
 ls -lah
 
 # Build the documentation
 make -C docs clean
-make -C docs html
+sphinx-build docs/source docs/build/html
 
 # Update GitHub pages
 git config --global user.name "${GITHUB_ACTOR}"
