@@ -6,6 +6,9 @@
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme
 
+pwd
+ls -lah
+
 # Build the documentation
 make -C docs clean
 make -C docs html
@@ -15,7 +18,7 @@ git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
 docroot=$(mktemp -d)
-rsync -av "docs/build/html" "${docroot}/"
+rsync -av "docs/_build/html" "${docroot}/"
 pushd "${docroot}" || exit
 
 git init
