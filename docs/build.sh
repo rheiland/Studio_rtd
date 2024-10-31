@@ -4,14 +4,14 @@
 
 # Install Dependencies
 apt-get update
-apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme
+apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-pip
 
 python3 -m pip install --upgrade
 pip uninstall docutils
 pip install docutils
 
 pwd
-ls -lah
+ls docs -lah
 
 # Build the documentation
 make -C docs clean
