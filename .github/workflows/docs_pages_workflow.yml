@@ -4,6 +4,10 @@ name: docs_pages_workflow
 on:
   push:
     branches: [ main ]
+
+permissions:
+ id-token: write
+ pages: write
  
 jobs:
  
