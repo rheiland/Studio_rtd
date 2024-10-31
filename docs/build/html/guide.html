@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide &mdash; PhysiCell Studio 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gallery" href="gallery.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PhysiCell Studio
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-model-virus-macrophage">Sample model: virus-macrophage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#config-basics">Config Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#microenvironment">Microenvironment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cell-types">Cell Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cycle">Cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#death">Death</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volume">Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mechanics">Mechanics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#motility">Motility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#secretion">Secretion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interactions">Interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intracellular">Intracellular</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-data">Custom Data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user-params">User Params</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rules">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ics-initial-conditions">ICs (Initial Conditions)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run">Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plot">Plot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plot-cells-scalars">Plot cells’ scalars</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PhysiCell Studio</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/guide.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="guide">
+<h1>Guide<a class="headerlink" href="#guide" title="Link to this heading"></a></h1>
+<p id="id1">PhysiCell Studio is a graphical tool to simplify PhysiCell model editing. It provides a multi-tabbed GUI that allows graphical editing of the model and its associated XML, including the creation/deletion of fundamental objects, e.g., substrates (or signals) in the microenvironment, and cell types. It also lets users run their model and interactively visualize results, allowing for more rapid model refinement.</p>
+<p>This User Guide provides brief, but hopefully sufficient, guidance on using the Studio - at least its contents (not the challenges involved in developing your particular model). If you experience problems or have questions, please contact us using an appropriate PhysiCell community Slack channel or <a class="reference external" href="https://github.com/PhysiCell-Tools/PhysiCell-Studio/issues">https://github.com/PhysiCell-Tools/PhysiCell-Studio/issues</a> of the Studio GitHub repository. The latter is preferred when reporting a fatal error using the Studio. When reporting problems, please provide the Studio version # (found in the <cite>Studio-&gt;About</cite> menu) and the steps to reproduce the problem. We welcome Pull Requests to the <cite>development</cite> branch of <a class="reference external" href="https://github.com/PhysiCell-Tools/PhysiCell-Studio">https://github.com/PhysiCell-Tools/PhysiCell-Studio</a> (see instructions there) for bug fixes and suggested improvements.</p>
+<p>This Guide will be updated as the Studio itself is updated, however there may be a lag. Therefore, if you are running a recent release of the Studio, you may notice some differences in the content described here.</p>
+<section id="running">
+<h2>Running<a class="headerlink" href="#running" title="Link to this heading"></a></h2>
+<p>It is important to understand that the XML configuration file you are editing in the Studio will be updated (overwritten) when you do <cite>File-&gt;Save</cite> or <em>when you Run a simulation</em>. Also, the rules you have in your Rules table will automatically be written to the folder/file you have specified in that tab. But the ICs requires that you explicitly <cite>Save</cite> to the .csv file from the ICs tab. The Studio does not do “instantaneous” updates to the XML, so if it encounters a fatal error and crashes, any changes you made will not be automatically saved. Neither does it track changes you made and warn you of unsaved changes when you quit the Studio. Therefore, if you are working on your own model, it is a good practice to <cite>File-&gt;Save</cite> (has keyboard shortcut) occasionally and adopt the habit of making backup copies of any files you consider critical.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<img alt="_images/tabs_only.png" src="_images/tabs_only.png" />
+<p>PhysiCell Studio consists of multiple tabs, each representing a logical grouping of model parameters and/or functionality.
+Each tab will be described in detail in the sections below, but briefly they are:</p>
+<ul class="simple">
+<li><p><cite>Config Basics</cite> - define the domain and other misc parameters of the simulation</p></li>
+<li><p><cite>Microenvironment</cite> - define the microenvironment, i.e., one or more substrates (signals) and their parameters</p></li>
+<li><p><cite>Cell Types</cite> - define one or more cell types and the phenotype parameters associated with each</p></li>
+<li><p><cite>User Params</cite> - define optional “user” parameters that are unique to a particular model</p></li>
+<li><p><cite>Rules</cite> - optional “rules” associated with a cell type that define cell behaviors in response to signals</p></li>
+<li><p><cite>ICs</cite> - convenience functionality to define simple 2D initial conditions (ICs) for cells</p></li>
+<li><p><cite>Run</cite> - run a simulation and show the normal PhysiCell output to the terminal</p></li>
+<li><p><cite>Plot</cite> - provide plotting options for visualizing output results (even while the simulation is being run)</p></li>
+</ul>
+</section>
+<section id="sample-model-virus-macrophage">
+<h2>Sample model: virus-macrophage<a class="headerlink" href="#sample-model-virus-macrophage" title="Link to this heading"></a></h2>
+<p>We will illustrate the Studio using the PhysiCell virus-macrophage model, i.e., we assume you have created
+this model:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">~/PhysiCell$ make reset</span>
+<span class="go">~/PhysiCell$ make virus-macrophage-sample</span>
+<span class="go">~/PhysiCell$ make</span>
+</pre></div>
+</div>
+<p>If the resulting config/PhysiCell_settings.xml is in a “flattened” format (which the Studio requires)
+then you should be able to run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">~/PhysiCell$ python studio/bin/studio.py -e virus-sample</span>
+</pre></div>
+</div>
+<p># However, if you happen to have an older, hierarchical .xml format then you will need to use the flattened one in the studio folder:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">~/PhysiCell$ python studio/bin/studio.py -c studio/config/virus_macrophage.xml -e virus-sample</span>
+</pre></div>
+</div>
+</section>
+<section id="config-basics">
+<h2>Config Basics<a class="headerlink" href="#config-basics" title="Link to this heading"></a></h2>
+<img alt="_images/config_virus.png" src="_images/config_virus.png" />
+<ul class="simple">
+<li><p>=== Domain ===</p></li>
+<li><p>define the model domain size (we recommend leaving dx=dy=dz=20). A 2D model will have Z range: [-dz/2, dz/2, dz]</p></li>
+<li><p>=== Times ===</p></li>
+<li><p><cite>Max Time</cite> - of the simulation. <cite>+1 day</cite> convenience button to add 1440 mins (1 day)</p></li>
+<li><p><cite>Diffusion/Mechanics/Phenotype dt</cite> - 3 time scales in a PhysiCell model (rf. the PhysiCell method paper). Only modify if you’re an advanced user.</p></li>
+<li><p>=== Misc runtime params ===</p></li>
+<li><p><cite># threads</cite> - # of OpenMP threads (to help speed up calculations)</p></li>
+<li><p><cite>output folder</cite> - where the output files will be written; relative to where you Run the simulation.</p></li>
+<li><p><cite>Save data(intervals)</cite> - there are (primarily) two types of output files saved by PhysiCell: <cite>SVG</cite> (.svg (ASCII); for cells’ positions, sizes, colors) and <cite>Full</cite> (.mat (binary); for substrate concentrations and custom data). Currently, in the Plot tab, when you plot <em>both</em> cells and substrates, it assumes those files were written at the same simulation time. Therefore, you should provide the <em>same</em> interval value for both if you plan to plot both. The <cite>Sync</cite> checkbox helps ensure this. However, if you only plan to plot cells’ SVG files, then you can set the <cite>Full</cite> interval to a very high value or simply uncheck it to not have any substrate or cells’ custom data saved.</p></li>
+<li><p><cite>Plot SVG substrate</cite> - option to also plot a substrate concentration in the .svg files. If this is enabled, you will need to provide the proper arguments to the <cite>SVG_plot</cite> function in your main.cpp (namely, a custom coloring function for the selected substrate). Refer to the <cite>interaction</cite> sample project for an example.</p></li>
+<li><p>=== Initial conditions of cells ===</p></li>
+<li><p><cite>enable</cite> - check if you are providing a text file that contains data for the initial conditions of cells, including their positions, cell types, etc.</p></li>
+<li><p>=== Cells’ global behaviors</p></li>
+<li><p><cite>virtual walls</cite> - if checked, indicates that cells should be nudged away from the domain boundaries when they get too close</p></li>
+</ul>
+</section>
+<section id="microenvironment">
+<h2>Microenvironment<a class="headerlink" href="#microenvironment" title="Link to this heading"></a></h2>
+<img alt="_images/microenv_virus.png" src="_images/microenv_virus.png" />
+<ul class="simple">
+<li><p>Define the substrates (or signals) used in the model</p></li>
+<li><p>Selecting one in the box on the left will update the parameters on the right.</p></li>
+<li><p>The <cite>New</cite> button will create a new substrate with default parameters</p></li>
+<li><p>The <cite>Copy</cite> button will create a new substrate with the same parameters as the currently selected substrate</p></li>
+<li><p>The <cite>Delete</cite> button will delete the currently selected substrate</p></li>
+<li><p>To rename a substrate, double-click it, modify the name, and press the Enter/Return key</p></li>
+<li><p>The parameters on the right should be mostly self-explanatory. However, note that the <cite>Dirichlet BC`(Boundary Condition) `Apply to all</cite> button only copies the value provided to each of the boundaries. It does <em>not</em> toggle on (enable) those boundaries. You must explicitly enable any boundary that you want to be Dirichlet conditions.</p></li>
+<li><p><cite>calculate gradients</cite> - check if you want substrate gradients to be computed at each “Mechanics dt” timestep. You would need to do so, for example, if certain cell types were chemotaxing (rf. Cell Types | Motility subtab).</p></li>
+<li><p><cite>track in agents</cite> - check if you want cells to keep track of the substrate concentration during secretion</p></li>
+</ul>
+</section>
+<section id="cell-types">
+<h2>Cell Types<a class="headerlink" href="#cell-types" title="Link to this heading"></a></h2>
+<img alt="_images/celltypes_virus.png" src="_images/celltypes_virus.png" />
+<ul class="simple">
+<li><p>This tab is used to define one or more cell types and the phenotype for each. Therefore it exposes a large number of parameters. Note that it has subtabs, one for each phenotypic cell behavior.</p></li>
+</ul>
+<img alt="_images/cell_types_subtabs.png" src="_images/cell_types_subtabs.png" />
+<ul class="simple">
+<li><p>On the left is a table of all cell types defined. You can create a <cite>New</cite> one which will be populated with default PhysiCell parameter values, or make a <cite>Copy</cite> of the currrently selected cell type, or <cite>Delete</cite> the selected one. Creating new cell types will always be appended at the end of the table and will be assigned a name with a random 3-character suffix. You should rename them to be more meaningful to your model. (The table should maintain a sequential numbering of cell type IDs, starting with 0.)</p></li>
+<li><p>You can rename a cell type by double-clicking its name, typing a new name, and pressing Enter.</p></li>
+<li><p>WARNING! Currently, if you rename or delete a cell type, we do not automatically update any rules (in the Rules tab) that used them. However, if you quit the Studio and restart it with the same config file, it will perform a validation check of the cell type names used in Rules and let you know if some reference undefined cell types (and simply not insert those into the rules table).</p></li>
+<li><p>On the right, the <cite>Reset to PhysiCell defaults</cite> does just that - it resets all parameter values to their defaults in the core PhysiCell code. This can be useful if you have been experimenting with different parameter values to see the effect they have on your model, but then decide to do a “reset” of the parameters in this section. This same button appears on the other phenotype subtabs and applies to the parameters in each. WARNING: some tabs have dropdown widgets that contain either a list of all substrates or a list of all cell types. The outcome of the <cite>Reset to PhysiCell defaults</cite> will be to reset parameters associated with EVERY object in the dropdown(s). This will likely change in the future.</p></li>
+</ul>
+<section id="cycle">
+<h3>Cycle<a class="headerlink" href="#cycle" title="Link to this heading"></a></h3>
+<img alt="_images/cell_cycle_virus.png" src="_images/cell_cycle_virus.png" />
+<p>Define the cycle parameters for this cell type.
+Training app: <a class="reference external" href="https://nanohub.org/tools/trcycle">https://nanohub.org/tools/trcycle</a></p>
+<p>We provide schematic graphs of some cell cycles (taken from the original PhysiCell User Guide; rf. it for more details).</p>
+<img alt="_images/cycle_live.png" src="_images/cycle_live.png" />
+<img alt="_images/cycle_Ki67_adv.png" src="_images/cycle_Ki67_adv.png" />
+<img alt="_images/cycle_flow_cyto.png" src="_images/cycle_flow_cyto.png" />
+<img alt="_images/cycle_flow_cyto_sep.png" src="_images/cycle_flow_cyto_sep.png" />
+<img alt="_images/cycle_quiescent.png" src="_images/cycle_quiescent.png" />
+</section>
+<section id="death">
+<h3>Death<a class="headerlink" href="#death" title="Link to this heading"></a></h3>
+<img alt="_images/cell_death_virus.png" src="_images/cell_death_virus.png" />
+<p>Define the death parameters for this cell type.
+Training app: <a class="reference external" href="https://nanohub.org/tools/trdeath">https://nanohub.org/tools/trdeath</a></p>
+</section>
+<section id="volume">
+<h3>Volume<a class="headerlink" href="#volume" title="Link to this heading"></a></h3>
+<img alt="_images/cell_volume_virus.png" src="_images/cell_volume_virus.png" />
+<p>Define the volume parameters for this cell type.
+Training app: <a class="reference external" href="https://nanohub.org/tools/trvolume2">https://nanohub.org/tools/trvolume2</a></p>
+</section>
+<section id="mechanics">
+<h3>Mechanics<a class="headerlink" href="#mechanics" title="Link to this heading"></a></h3>
+<img alt="_images/cell_mechanics_virus.png" src="_images/cell_mechanics_virus.png" />
+<p>Define the mechanics parameters for this cell type. There are two basic kinds of mechanics: “normal” adhesion/repulsion between cells and spring mechanics (using the last 3 parameters).
+Training app: <a class="reference external" href="https://nanohub.org/tools/trmechanics">https://nanohub.org/tools/trmechanics</a> (does not include spring mechanics)</p>
+</section>
+<section id="motility">
+<h3>Motility<a class="headerlink" href="#motility" title="Link to this heading"></a></h3>
+<img alt="_images/cell_motility_virus_epi.png" src="_images/cell_motility_virus_epi.png" />
+<img alt="_images/cell_motility_virus_mac.png" src="_images/cell_motility_virus_mac.png" />
+<p>Define the motility parameters for this cell type. In addition to basic motility, this tab also defines
+whether cells of the selected cell type are chemotaxing to/from one or more substrate/signal (advanced chemotaxis allows more than one).
+Training app: <a class="reference external" href="https://nanohub.org/tools/trmotility">https://nanohub.org/tools/trmotility</a></p>
+</section>
+<section id="secretion">
+<h3>Secretion<a class="headerlink" href="#secretion" title="Link to this heading"></a></h3>
+<img alt="_images/cell_secretion_virus_epi.png" src="_images/cell_secretion_virus_epi.png" />
+<p>Define the secretion parameters for this cell type. Note that secretion can be both “out” of a cell and “in” to a cell (uptake).
+Training app: <a class="reference external" href="https://nanohub.org/tools/trsecretion">https://nanohub.org/tools/trsecretion</a></p>
+</section>
+<section id="interactions">
+<h3>Interactions<a class="headerlink" href="#interactions" title="Link to this heading"></a></h3>
+<img alt="_images/cell_interactions_virus.png" src="_images/cell_interactions_virus.png" />
+<p>Define the interaction parameters for this cell type.</p>
+</section>
+<section id="intracellular">
+<h3>Intracellular<a class="headerlink" href="#intracellular" title="Link to this heading"></a></h3>
+<img alt="_images/cell_intracellular_virus.png" src="_images/cell_intracellular_virus.png" />
+<p>Define the intracellular parameters for this cell type.</p>
+</section>
+<section id="custom-data">
+<h3>Custom Data<a class="headerlink" href="#custom-data" title="Link to this heading"></a></h3>
+<img alt="_images/cell_customdata_virus.png" src="_images/cell_customdata_virus.png" />
+<p>Cells can have custom data (parameters) associated with them which can be modified during a simulation (either in C++ custom code or in Rules). The <cite>value</cite> provided in the table is the initial value each cell of that cell type
+has at the start of a simulation. A custom data parameter can be plotted (Plot tab) by selecting the “.mat” option
+for cells then selecting the name of the custom parameter in the dropdown widget.</p>
+</section>
+</section>
+<section id="user-params">
+<h2>User Params<a class="headerlink" href="#user-params" title="Link to this heading"></a></h2>
+<img alt="_images/user_params_virus.png" src="_images/user_params_virus.png" />
+<p>User parameters are general model parameters (as opposed to Cell Types | Custom Data parameters which are specific to cell data). User parameters are accessed in your model’s C++ code. Search for <cite>parameters.ints, parameters.doubles</cite>, etc, in various sample projects’ <cite>custom.cpp</cite> files. You can click/drag a column separator in this table to change its width. (Unfortunately, that column width information is not retained if you exit the Studio and start it again)</p>
+</section>
+<section id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Link to this heading"></a></h2>
+<img alt="_images/rules_poster_demo.png" src="_images/rules_poster_demo.png" />
+<p>This section is independent of the others in this guide in that it does not relate to the virus-macrophage sample project.</p>
+<p>The rules functionality in PhysiCell is both powerful and elegant. A rule, for a cell type, specifies how
+that cell will respond to a specific signal. In other words, rules will determine cell behaviors. The response
+is defined by a Hill function and its parameters are also specified in this tab, along with comboboxes that
+list the valid Signals and Behaviors. For an introductory tutorial on using rules, see <a class="reference external" href="https://github.com/physicell-training/nw2023">https://github.com/physicell-training/nw2023</a>. The screenshots shown here reflect that tutorial.</p>
+<a class="reference internal image-reference" href="_images/rule_pressure_cycleentry_plot.png"><img alt="_images/rule_pressure_cycleentry_plot.png" src="_images/rule_pressure_cycleentry_plot.png" style="width: 500px;" /></a>
+</section>
+<section id="ics-initial-conditions">
+<h2>ICs (Initial Conditions)<a class="headerlink" href="#ics-initial-conditions" title="Link to this heading"></a></h2>
+<p>The ICs tab provides a graphical tool that lets you create fairly simple initial conditions of cells. For now, those ICs are just x,y,z positions and cell type (by name or ID). The currently supported geometric regions in which cells can be placed are annuli (or disks), boxes (rectangles), rings, or single points. The center of any of those 2D regions is specified using x0,y0. R1 and R2 represent the distances/radii. For boxes, R1= (absolute) x-distance from the center to each left/right edge; R2= y-distance from the center to each top/bottom edge; For an annulus: R1= inner radius; R2= outer radius (if R1=0, the shape becomes a disk). Each region can be filled in two different ways: randomly or hex-filled. You only specify the # of cells for the random fill. o1 and o2 (omegas) represent degrees for the start/end of a ring of cells (o1,o2 in range [-360,360]). The “mod” parameter means “modulo” and is used to provide integral spacing of cells on a ring. Note that you can select a cell type from the combobox at the top. The size (radius) of each cell is determined by the Cell Types | Volume (total) parameter.</p>
+<img alt="_images/ics_geoms.png" src="_images/ics_geoms.png" />
+<p>The typical steps are: select the geometric region type, fill type (if relevant), # cells (if fill type = random), center of region, R1 and R2, or o1 and o2. Then click <cite>Plot</cite> to see if they appear where you expect. If not, either click <cite>Undo last</cite> or <cite>Clear all</cite>. Repeat if you have more regions to fill with ICs. When you have the ICs you want, click <cite>Save</cite> to write out the .csv file to the specified folder and filename. The <cite>use cell type names</cite> are the newer (v2 format) way of providing a cells.csv file. If that box is unchecked, the .csv file will be written with cell type IDs instead (v1 format).</p>
+<p>In the following image, we demonstrate with a simple example. Here, we have loaded the template model (hence the <cite>default</cite> cell type). With the selected geometric region <cite>annulus/disk</cite>, <cite>random fill</cite>, <cite># cells</cite> = 100, and the specified center and radii, we click <cite>Plot</cite> to see the result. Note that since R1 &gt; 0, it will indeed be an annulus; if R1=0, we would have a disk.</p>
+<img alt="_images/ics_template_annulus_100.png" src="_images/ics_template_annulus_100.png" />
+<p>In the following, we create ICs for two cell types, each in a different region.</p>
+<ul class="simple">
+<li><p><cite>Clear all</cite> to start fresh</p></li>
+<li><p>select cell type=`default`; create a hex-filled disk; Plot</p></li>
+<li><p>select cell type=`ctype2`; create a hex-filled rectangle; Plot</p></li>
+<li><p>if we make a mistake for one of the Plots, use <cite>Undo last</cite></p></li>
+<li><p>provide a unique .csv filename instead of <cite>cell.csv</cite> if you want, and click <cite>Save</cite></p></li>
+<li><p>be sure to specify the same folder and file name in the <cite>Config Basics</cite> tab for ICs section there and <cite>enable</cite> it to be used</p></li>
+</ul>
+<img alt="_images/ics_disk_hex.png" src="_images/ics_disk_hex.png" />
+<img alt="_images/ics_disk_rect.png" src="_images/ics_disk_rect.png" />
+<p>The .csv file should contain content that looks similar to the following. Note that since we had <cite>use cell type names</cite> checked, each line will include the name of that cell type. Also, in this case, there will be a single header line at the top that starts with <cite>x</cite> (for the x-coordinate column). If we don’t check the <cite>use cell type names</cite>, this is the older style of .csv and it will use cell IDs (integer values) instead of cell type names. And there will not be a header line.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">x,y,z,type,volume,cycle entry,custom:GFP,custom:sample</span>
+<span class="go">-81.2695257531903,-285.4287579015727,0.0,default</span>
+<span class="go">-64.44410465728185,-285.4287579015727,0.0,default</span>
+<span class="go">-47.618683561373416,-285.4287579015727,0.0,default</span>
+<span class="go">-30.793262465464977,-285.4287579015727,0.0,default</span>
+<span class="go">...</span>
+<span class="go">422.0635527397712,424.27452590563917,0.0,ctype2</span>
+<span class="go">380.0,438.8457680040665,0.0,ctype2</span>
+<span class="go">396.82542109590844,438.8457680040665,0.0,ctype2</span>
+<span class="go">413.65084219181693,438.8457680040665,0.0,ctype2</span>
+</pre></div>
+</div>
+</section>
+<section id="run">
+<h2>Run<a class="headerlink" href="#run" title="Link to this heading"></a></h2>
+<p>The Run tab lets you run a simulation using a specific executable model and specific XML configuration file. The lower region of the tab contains your normal terminal output you would see if you ran the model from a shell window. It has a scrollbar so you can scroll back to the initial terminal output which summarizes the model parameters, prints the names of all valid Signals and Behaviors available in the Rules tab, any rulesets (from .csv), the PhysiCell version, etc..</p>
+<ul class="simple">
+<li><p>the <cite>Cancel</cite> button will stop the simulation; there is not currently a Halt/Continue option</p></li>
+</ul>
+<img alt="_images/run_virus.png" src="_images/run_virus.png" />
+</section>
+<section id="plot">
+<h2>Plot<a class="headerlink" href="#plot" title="Link to this heading"></a></h2>
+<p>When you start a simulation (using the Run tab) and output files are generated, you can begin visualizing results. In the Plot tab, click <cite>Play</cite> to
+start rendering those results. The <cite>Play</cite> button will switch to <cite>Pause</cite>, so you can halt and restart easily. The two primary objects to visualize are cells and substrates, each with a checkbox toggle. Assuming you selected “SVG” in the <cite>Config Basics</cite> tab (“Save data” section), then .svg files will be written (at the specified time interval of the simulation) and can be plotted when the <cite>.svg</cite> radio button is selected. Your model’s C++ code can specify unique cell colors for the SVG (related to, but not necessarily the same as, those in <cite>Legend(.svg)</cite> button).</p>
+<p>Alternatively, you can plot cells’ scalar values when the <cite>.mat</cite> radio button is selected. There are many types of scalar variables for cells that are stored in the .mat files. You can see the entire list using the <cite>full list</cite> button, then click the combobox above it. These scalar variables will be a combination of hard-coded ones by PhysiCell and model-specific ones defined in the <cite>Cell Types | Custom Data</cite> subtab. The <cite>partial</cite> button will populate the combobox with a more customary subset of scalar variables. Note that you can select a colorbar for the cells’ scalars and can fix lower/upper bounds for the values, if that’s desired. Otherwise, the colorbar will be dynamic and use the min/max of the current frame of data.</p>
+<p>We plot .svg data from the virus-macrophage simulation. The first is at t=0 and we also display the cell types color legend. Note there are only two cell types and therefore two colors in the legend. However, later in the simulation we note that some of the cells have a different color (yellow-ish). These colors are specified in a custom coloring function in the custom.cpp code. And in the third plot, we also plot the interferon signal.</p>
+<img alt="_images/plot_virus_t0.png" src="_images/plot_virus_t0.png" />
+<img alt="_images/plot_virus_t2.png" src="_images/plot_virus_t2.png" />
+<img alt="_images/plot_virus_t2_interferon.png" src="_images/plot_virus_t2_interferon.png" />
+<p>The <cite>View</cite> menu provides <cite>Plot options</cite> (in this case, for 2D plotting):</p>
+<a class="reference internal image-reference" href="_images/filters2D_view_options.png"><img alt="_images/filters2D_view_options.png" src="_images/filters2D_view_options.png" style="width: 300px;" /></a>
+<p>Most of these options will be self-explanatory when you use them. But note that Cells <cite>fill</cite> will behave differently for .svg vs .mat and  <cite>nucleus</cite> is currently only meaningful for .svg data. The <cite>voxel grid</cite> and <cite>mech grid</cite> pertain to the two different grids (voxel and mechanics) used in PhysiCell.
+The <cite>save frame*.png</cite> will save sequentially numbered .png files in your output folder. To reset the counter, toggle off/on the checkbox. This is a first step to generating a movie (.gif or .mp4), but for now you will need to generate your own movie (via ImageMagick, etc) using the .png files as input.</p>
+<p>—</p>
+<img alt="_images/population_cell_type_plot_virus.png" src="_images/population_cell_type_plot_virus.png" />
+<p>The <cite>Population plot</cite> button will generate a time series plot of counts of various types of discrete (categorical) data. This will appear in a separate popup window. The type of discrete data is selected from a combobox widget.</p>
+<section id="plot-cells-scalars">
+<h3>Plot cells’ scalars<a class="headerlink" href="#plot-cells-scalars" title="Link to this heading"></a></h3>
+<p>It is also possible to plot cells’ scalar values using the <cite>.mat</cite> option instead of <cite>.svg</cite>. By default, you will have a “partial list” of scalars to choose from in the combobox widget. These are intended to be more commonly used and therefore easier to find and select.</p>
+<a class="reference internal image-reference" href="_images/cell_scalars_heterog_partiallist.png"><img alt="_images/cell_scalars_heterog_partiallist.png" src="_images/cell_scalars_heterog_partiallist.png" style="width: 300px;" /></a>
+<img alt="_images/cell_scalars_heterog_oncoprotein.png" src="_images/cell_scalars_heterog_oncoprotein.png" />
+<p>Note that, just as for substrate plots, you can choose from a list of predefined colormaps (<cite>viridis</cite>, etc) and can also fix the colormap range if you want. Otherwise, the colormap range will dynamically adjust per frame.</p>
+<img alt="_images/cell_scalars_heterog_pressure.png" src="_images/cell_scalars_heterog_pressure.png" />
+<img alt="_images/cell_scalars_heterog_elapsedtime_in_phase.png" src="_images/cell_scalars_heterog_elapsedtime_in_phase.png" />
+<p>If you want the full list of scalars that have been written to the .mat files, click the <cite>full list</cite> button to list <em>all</em> scalars in the combobox. Note that they will be sorted alphabetically:</p>
+<a class="reference internal image-reference" href="_images/cell_scalars_heterog_fulllist.png"><img alt="_images/cell_scalars_heterog_fulllist.png" src="_images/cell_scalars_heterog_fulllist.png" style="width: 300px;" /></a>
+<p>Also, the combobox allows for a “filter” - if you type a string, e.g., “adhesion”, it will display only those items with the string:</p>
+<img alt="_images/cell_scalars_heterog_filter.png" src="_images/cell_scalars_heterog_filter.png" />
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gallery.html" class="btn btn-neutral float-right" title="Gallery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
