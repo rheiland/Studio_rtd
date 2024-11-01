@@ -36,6 +36,7 @@ jobs:
       shell: bash
 
     - name: Upload artifacts
+      id: deployment
       uses: actions/upload-pages-artifact@v3
       with:
        name: github-pages
