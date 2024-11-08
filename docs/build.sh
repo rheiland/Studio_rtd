@@ -25,7 +25,7 @@ git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 docroot=$(mktemp -d)
 
 ## Copy HTML assets into docroot
-rsync -av "docs/build/html" "${docroot}/"
+rsync -av "docs/build/html/" "${docroot}/"
 
 pushd "${docroot}" || exit
 
