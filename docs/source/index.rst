@@ -8,6 +8,9 @@ This is a test.
 
    This readthedocs documentation is under active development.
 
+.. math::
+   \frac{ \sum_{t=0}^{N}f(t,k) }{N}
+
 Contents
 --------
 
