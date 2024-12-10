@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; PhysiCell Studio 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Guide" href="guide.html" />
+    <link rel="prev" title="PhysiCell Studio" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PhysiCell Studio
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PhysiCell Studio</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p id="id1">PhysiCell Studio is a graphical tool to help create PhysiCell models, run simulations, and interactively visualize results.</p>
+<p>A PhysiCell model is primarily defined with a XML configuration file which specifies primary objects: cell types and substrates (sometimes referred to as signals). Each of these primary objects will have several parameters associated with them to define their behaviors. If there is also an intracellular submodel associated with each cell, then additional files will be provided in the configuration file.
+Other optional files can be provided in the configuration file that provide initial conditions (e.g., cell positions) and cell rules to further define their behaviors.</p>
+<p>PhysiCell Studio lets users avoid hand-editing an XML configuration file.</p>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading"></a></h2>
+<p>We recommend installing the Anaconda Python distribution (<a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>) to have the necessary Python modules (used by the GUI, data parsing, and visualization). In the future, we will provide a self-contained Studio bundled package.</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>The most common way to run the Studio is from a PhysiCell root directory. Of course you can always download just the Studio and explore (File-&gt;Open) the example .xml configuration files (in its /config folder), however, without an executable model, you won’t be able to run a simulation and plot results. Therefore, we assume you have installed
+PhysiCell and have compiled a sample model. (In the terminal command lines shown below, PhysiCell has been installed into a directory <cite>~/PhysiCell</cite>, but yours may be something different depending how you installed it). To download the Studio and have it be installed in its own
+directory inside the PhysiCell directory, click this link and download the “get_studio.py” Python script:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/PhysiCell-Tools/PhysiCell-Studio/blob/main/get_studio.py">https://github.com/PhysiCell-Tools/PhysiCell-Studio/blob/main/get_studio.py</a></p></li>
+</ul>
+<img alt="_images/download_get_studio.png" src="_images/download_get_studio.png" />
+<p>Then run the script:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">~/PhysiCell$ python get_studio.py</span>
+</pre></div>
+</div>
+<p>It will download and install the latest version of the Studio into a directory called <cite>studio</cite> within your PhysiCell directory. The <cite>get_studio.py</cite> script will also print out sample commands for running the Studio, e.g.:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">~/PhysiCell$ python studio/bin/studio.py          # if no arguments, it tries to load config/PhysiCell_settings.xml</span>
+<span class="go">or,</span>
+<span class="go">~/PhysiCell$ python studio/bin/studio.py -c &lt;config_file.xml&gt; -e &lt;executable_program&gt;   # be explicit about the config file and executable</span>
+<span class="go">and,</span>
+<span class="go">~/PhysiCell$ python studio/bin/studio.py --help</span>
+</pre></div>
+</div>
+<p>(Rather than run the <cite>get_studio.py</cite> Python script, you can also manually download a specific release of the Studio from <a class="reference external" href="https://github.com/PhysiCell-Tools/PhysiCell-Studio/releases">https://github.com/PhysiCell-Tools/PhysiCell-Studio/releases</a>).</p>
+<p>Note:</p>
+<ul class="simple">
+<li><p>there are ways to create an alias and/or a symbolic link to make it easier to run the Studio</p></li>
+<li><p>you may need to prefix your executable name with <cite>./</cite>, depending on your PATH environment variable</p></li>
+<li><p>this guide will use a Unix-style command syntax; Windows syntax may differ (e.g., you will probably need a “.exe” suffix on the executable program name)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="PhysiCell Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guide.html" class="btn btn-neutral float-right" title="Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
