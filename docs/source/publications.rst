@@ -11,6 +11,10 @@ Main publications to cite:
 *  R. Heiland, D. Bergman, B. Lyons, J. Cass, H.L. Rocha, M. Ruscone, V. Noël, P. Macklin. PhysiCell Studio: a graphical tool to make agent-based modeling more accessible `doi.org/10.1101/2023.10.24.563727 <https://doi.org/10.1101/2023.10.24.563727>`_
 
 
+* J.A.I. Johnson, et al.. Digitize your Biology! Modeling multicellular systems through interpretable cell behavior. `doi: 10.1101/2023.09.17.557982 <https://doi.org/10.1101/2023.09.17.557982>`
+
+* see more `here <https://physicell.org/Citing_PhysiCell.html>`
+
 Papers that did not just cite PhysiCell, but actually used it. Work in progress...
 
 2024
