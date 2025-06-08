@@ -47,6 +47,7 @@ Initial comments:
 * to run the default simulation, click the Run tab and press the "Run simulation" button.
 
 .. image:: ./galaxy_imgs/file_open.png
+   :width: 200px
 * to open a different model that comes with PhysiCell Studio: File -> Open 
 
 .. image:: ./galaxy_imgs/file_open_config.png
