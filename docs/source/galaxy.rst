@@ -51,8 +51,10 @@ Initial comments:
 * to open a different model that comes with PhysiCell Studio: File -> Open 
 
 .. image:: ./galaxy_imgs/file_open_config.png
+   :width: 500px
 
 .. image:: ./galaxy_imgs/file_open_config_xml.png
+   :width: 500px
 * select one of the .xml files to explore a different model
 
 .. image:: ./galaxy_imgs/pcstudio_put_on_history.png
