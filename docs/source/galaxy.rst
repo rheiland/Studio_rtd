@@ -61,6 +61,7 @@ Initial comments:
 * save various output results to the Galaxy History (found on the main Galaxy browser tab)
 
 .. image:: ./galaxy_imgs/pcstudio_refresh_to_reconnect.png
+   :width: 300px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
 Overview of PhysiCell Studio: 
