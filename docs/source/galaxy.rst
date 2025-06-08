@@ -22,7 +22,7 @@ Initial comments:
 * a session remains active for about 24 hours
 * to reconnect a Studio session if it disconnects temporarily, simply refresh its web page 
 * there is only one /output directory for simulation results
-* when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the /output directory will be deleted and new simulation results will be save to /output (but will not persist across multiple Studio sessions)
+* when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the /output directory will be deleted and new simulation results will be written to /output (but will not persist across multiple Studio sessions)
 * output results will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
