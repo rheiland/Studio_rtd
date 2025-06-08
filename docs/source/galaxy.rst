@@ -9,7 +9,7 @@ Galaxy platform
 ---------------
 
 Galaxy is a well known, Web-based platform of tools, aimed primarily at bioinformaticians, but
-has broadened in scope over the years. With generous help from the Galaxy community (Note 1), we
+has broadened in scope over the years. With generous help from the Galaxy community, we
 have ported PhysiCell Studio to run as an Interactive Tool. Currently, it is running on the EU instance of Galaxy (http://usegalaxy.eu) and should be running on other instances soon. If you do
 not yet have an account, register for one - it is free and requires very little information.
 Once you have an account, login and follow the steps below to run PhysiCell Studio.
