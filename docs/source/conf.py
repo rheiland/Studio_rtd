@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'PhysiCell Studio'
-copyright = '2024, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin. Thanks to the entire MathCancer Lab (past and present members) at Indiana University, the broader PhysiCell community, and many undergraduate students who have made valuable contributions. A special thanks to Aydan Bondurant (Fall 2024) who contributed the automated build for these readthedocs.'
+copyright = '2024-25, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin. Thanks to the entire MathCancer Lab (past and present members) at Indiana University, the broader PhysiCell community, and many undergraduate students who have made valuable contributions. A special thanks to Aydan Bondurant (Fall 2024) who contributed the automated build for these readthedocs. For help porting to the Galaxy platform, we thank Bjoern Gruening, Enis Afgan, Junhao Qiu, Jeremy Goecks, and others in the community who helped us resolve issues.'
 author = 'Heiland'
 
 release = '0.1'
