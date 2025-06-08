@@ -299,6 +299,7 @@ The `save frame*.png` will save sequentially numbered .png files in your output 
 ---
 
 .. image:: ./guide_imgs/population_cell_type_plot_virus.png
+   :width: 500px
 
 The `Population plot` button will generate a time series plot of counts of various types of discrete (categorical) data. This will appear in a separate popup window. The type of discrete data is selected from a combobox widget.
 
@@ -316,7 +317,10 @@ It is also possible to plot cells' scalar values using the `.mat` option instead
 Note that, just as for substrate plots, you can choose from a list of predefined colormaps (`viridis`, etc) and can also fix the colormap range if you want. Otherwise, the colormap range will dynamically adjust per frame.
 
 .. image:: ./guide_imgs/cell_scalars_heterog_pressure.png
+   :width: 400px
+
 .. image:: ./guide_imgs/cell_scalars_heterog_elapsedtime_in_phase.png
+   :width: 400px
 
 If you want the full list of scalars that have been written to the .mat files, click the `full list` button to list *all* scalars in the combobox. Note that they will be sorted alphabetically:
 
@@ -326,3 +330,4 @@ If you want the full list of scalars that have been written to the .mat files, c
 Also, the combobox allows for a "filter" - if you type a string, e.g., "adhesion", it will display only those items with the string:
 
 .. image:: ./guide_imgs/cell_scalars_heterog_filter.png
+   :width: 300px
