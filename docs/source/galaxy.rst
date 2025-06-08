@@ -47,6 +47,9 @@ Initial comments:
 .. image:: ./galaxy_imgs/pcstudio_run_sim0.png
 * to run the default simulation, click the Run tab and press the "Run simulation" button.
 
+At this point, you should be able to follow instructions elsewhere for basic use of the Studio. 
+https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . HOWEVER, you will want to return to this page for Galaxy-specific instructions, especially regarding loading files and saving simulation results.
+
 .. image:: ./galaxy_imgs/file_open.png
    :width: 200px
 * to open a different model that comes with PhysiCell Studio: File -> Open 
@@ -65,7 +68,3 @@ Initial comments:
    :width: 400px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
-Overview of PhysiCell Studio: 
------------------------------
-
-https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics
