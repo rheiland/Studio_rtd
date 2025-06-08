@@ -21,7 +21,8 @@ Initial comments:
 * some functionality found in the desktop version is missing in the Galaxy version
 * a session remains active for about 24 hours
 * to reconnect a Studio session if it disconnects temporarily, simply refresh its web page 
-* there is only one /output directory for simulation results; running a new simulation will overwrite files to that directory
+* there is only one /output directory for simulation results
+* when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the /output directory will be deleted and new simulation results will be save to /output (but will not persist across multiple Studio sessions)
 * output results will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
@@ -55,13 +56,13 @@ Initial comments:
 
 .. image:: ./galaxy_imgs/file_open_config_xml.png
    :width: 500px
-* select one of the .xml files to explore a different model
+* select one of the .xml files to explore a different model (the default, PhysiCell_settings.xml, is identical to template.xml)
 
 .. image:: ./galaxy_imgs/pcstudio_put_on_history.png
 * save various output results to the Galaxy History (found on the main Galaxy browser tab)
 
 .. image:: ./galaxy_imgs/pcstudio_refresh_to_reconnect.png
-   :width: 300px
+   :width: 400px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
 Overview of PhysiCell Studio: 
