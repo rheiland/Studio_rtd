@@ -16,7 +16,7 @@ Installation
 Galaxy tool (zero install)
 **************************
 
-We offer PhysiCell Studio as an interactive tool in the Galaxy platform: https://physicell-studio.readthedocs.io/en/latest/galaxy.html . This version provides a precompiled binary executable (template) model. We may add addditional binary models in the future. However, using this version prevents a user from using custom.cpp code for a model.
+We offer PhysiCell Studio as an interactive tool in the Galaxy platform: https://physicell-studio.readthedocs.io/en/latest/galaxy.html . This version provides a precompiled binary executable (template) model. We may add additional binary models in the future. However, using this version prevents a user from using custom.cpp code for a model.
 
 Desktop tool
 ************
