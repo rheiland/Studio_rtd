@@ -18,8 +18,12 @@ Initial comments:
 
 * currently only 2D models are allowed
 * when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. Therefore, if you want to save results from a session, e.g., a model (.xml) or its initial conditions or rules (.csv), or a simulation's results (in the /output directory), you will need to explicitly do that before quitting PhysiCell Studio.
+* some functionality found in the desktop version is missing in the Galaxy version
 * a session remains active for about 24 hours
 * to reconnect a Studio session if it disconnects temporarily, simply refresh its web page 
+* there is only one /output directory for simulation results; running a new simulation will overwrite files to that directory
+* output results will be automatically saved only when one quits the tool ("Studio menu -> Quit")
+* to save results manually, use the "File -> put on History" menu item.
 
 .. image:: ./galaxy_imgs/galaxy_tools.png
 * the Galaxy Tools column lists all available tools. You can search for "PhysiCell Studio"
@@ -49,6 +53,9 @@ Initial comments:
 
 .. image:: ./galaxy_imgs/file_open_config_xml.png
 * select one of the .xml files to explore a different model
+
+.. image:: ./galaxy_imgs/pcstudio_put_on_history.png
+* save various output results to the Galaxy History (found on the main Galaxy browser tab)
 
 .. image:: ./galaxy_imgs/pcstudio_refresh_to_reconnect.png
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
