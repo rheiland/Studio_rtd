@@ -13,6 +13,14 @@ PhysiCell Studio lets users avoid hand-editing an XML configuration file.
 Installation
 ------------
 
+Galaxy tool (zero install)
+**************************
+
+We offer PhysiCell Studio as an interactive tool in the Galaxy platform: https://physicell-studio.readthedocs.io/en/latest/galaxy.html . This version provides a precompiled binary executable (template) model. We may add addditional binary models in the future. However, using this version prevents a user from using custom.cpp code for a model.
+
+Desktop tool
+************
+
 PhysiCell Studio requires Python and some additional modules listed in `requirements.txt` (found in the Studio source code's root directory). If you do not already have Python installed on your computer, there are a few ways to install it, depending on your operating system (OS):
 
 * in general, for any OS: https://www.python.org/downloads/
