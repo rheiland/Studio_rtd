@@ -2,7 +2,6 @@ PhysiCell Studio
 ================
 
 PhysiCell Studio is a graphical tool to make it easier to create a PhysiCell model.
-This is a test.
 
 .. note::
 
@@ -15,6 +14,7 @@ Contents
 
    introduction
    guide
+   galaxy
    gallery
    publications
    funding
