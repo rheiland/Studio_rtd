@@ -15,29 +15,3 @@ Main publications to cite:
 
 
 * see more `here <https://physicell.org/Citing_PhysiCell.html>`_
-
-Papers that did not just cite PhysiCell, but actually used it. Work in progress...
-
-2024
-----
-
-
-2023
-----
-* K.M. Schneider, K. Giehl, S.A. Baeurle. Development and application of an agent-based model for the simulation of the extravasation process of circulating tumor cells. `doi.org/10.1002/cnm.3679 <https://doi.org/10.1002/cnm.3679>`_
-
-
-2022
-----
-
-2021
-----
-
-2020
-----
-
-2019
-----
-
-2018
-----
