@@ -23,7 +23,7 @@ Initial comments:
 * to reconnect a Studio session if it disconnects temporarily, simply refresh its web page 
 * there is only one /output directory for simulation results
 * when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the /output directory will be deleted and new simulation results will be written to /output (but will not persist across multiple Studio sessions)
-* output results will be automatically saved only when one quits the tool ("Studio menu -> Quit")
+* output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
 .. image:: ./galaxy_imgs/galaxy_tools.png
@@ -31,6 +31,7 @@ Initial comments:
 
 .. image:: ./galaxy_imgs/pcstudio_wait_active.png
 * the tool takes some time (hopefully, just seconds) to become active
+* notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use "File -> put on History".
 
 .. image:: ./galaxy_imgs/pcstudio_ready_to_open.png
 * after the "Open" link appears, click it
