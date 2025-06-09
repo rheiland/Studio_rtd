@@ -5,9 +5,6 @@ Galaxy
 
 Warning: this page is under construction and review. 
 
-Galaxy platform
----------------
-
 Galaxy is a well known, Web-based platform of tools, aimed primarily at bioinformaticians, but
 has broadened in scope over the years. With generous help from the Galaxy community, we
 have ported PhysiCell Studio to run as an Interactive Tool. Currently, it is running on the EU instance of Galaxy (http://usegalaxy.eu) and should be running on other instances soon. If you do
@@ -86,7 +83,7 @@ Upload a local file
 
 .. image:: ./galaxy_imgs/galaxy_upload_ui_3steps.png
    :width: 600px
-* on the main Galaxy interface, use the Upload tool to get a file from your local computer. It will appear in the Galaxy History.
+* on the main Galaxy interface, use the Upload tool to get a file from your local computer. It will appear in the Galaxy History. You may want to use this to upload a model config file (.xml), or initial conditions (.csv), or rules for cell signals/behaviors (.csv).
 
 .. image:: ./galaxy_imgs/upload_file_3_stages.png
    :width: 600px
