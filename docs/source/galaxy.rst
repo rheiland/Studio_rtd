@@ -69,8 +69,14 @@ https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . HOW
    :width: 400px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
+.. image:: ./galaxy_imgs/galaxy_upload_ui_3steps.png
+   :width: 600px
+* on the main Galaxy interface, use the Upload tool to get a file from your local computer. It will appear in the Galaxy History.
+
 .. image:: ./galaxy_imgs/upload_file_3_stages.png
-   :width: 500px
+   :width: 600px
+* in the Galaxy History, the new file will appear in 3 stages (a job starts (gray) to upload it, the job runs (orange), the job completes (green))
 
 .. image:: ./galaxy_imgs/get_from_history_steps.png
    :width: 500px
+* in the Studio, use "File -> get from History" to get this file (by ID)
