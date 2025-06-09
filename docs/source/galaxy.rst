@@ -69,3 +69,8 @@ https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . HOW
    :width: 400px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
+.. image:: ./galaxy_imgs/upload_file_3_stages.png
+   :width: 500px
+
+.. image:: ./galaxy_imgs/get_from_history_steps.png
+   :width: 500px
