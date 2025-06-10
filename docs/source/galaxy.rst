@@ -102,7 +102,7 @@ So, while it is easy to upload a local file to the History, accessing it from th
 a few steps.
 
 .. image:: ./galaxy_imgs/galaxy_upload_ui_3steps.png
-   :width: 600px
+   :width: 700px
 * on the main Galaxy interface, use the Upload tool to get a file from your local computer. It will appear in the Galaxy History. You may want to use this to upload a model config file (.xml), or initial conditions (.csv), or rules for cell signals/behaviors (.csv).
 
 .. image:: ./galaxy_imgs/upload_file_3_stages.png
@@ -111,4 +111,13 @@ a few steps.
 
 .. image:: ./galaxy_imgs/get_from_history_steps.png
    :width: 600px
-* in the Studio, use "File -> get from History" to get this file (by ID)
+* in the Studio, use "File -> get from History" to get this file (by ID). Note that a "get" will write the file to the `/import` directory. Therefore, enter `/import` into the text widget next to the `dir` button then press the button to show the contents of that directory.
+
+The steps to get a model config file (.xml) from the History and use it in the Studio are:
+
+* “File -> get from History” :  e.g., “get(133)” and it will save the file to “/import/133”
+* “File -> Open” that file; verify it displays correctly in the Studio. 
+* optionally, “File -> Save as” to /opt/pcstudio/config/model133.xml ; then re-Open that
+* "File -> put on History -> current config .xml”  (will put model133.xml there)
+
+
