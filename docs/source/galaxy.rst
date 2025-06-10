@@ -78,6 +78,20 @@ Reconnect the Studio session
    :width: 400px
 * if you see "pcstudio - Disconnected", just refresh this page in your browser to reconnect
 
+Saving results locally
+**********************
+
+Output results from building a model and running a simulation will automatically be 
+saved to the Galaxy History 1) only when the user explicitly quits PhysiCell Studio (Studio -> Quit)
+or 2) the Studio has exceeded its maximum Galaxy run time for a tool (~24 hours).
+
+If you want to save intermediate results, e.g., the current model definition (.xml), any 
+initial conditions (.csv), any rules (.csv), or the entire `/output` results (.xml, .svg, .mat, .txt), then you
+can use the "File -> put on History" menu to select those options. 
+
+.. image:: ./galaxy_imgs/pcstudio_put_on_history2.png
+   :width: 400px
+
 Upload a local file
 *******************
 
