@@ -15,12 +15,12 @@ Initial comments
 ****************
 
 * currently only 2D models are allowed
-* when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. Therefore, if you want to save results from a session, e.g., a model (.xml) or its initial conditions or rules (.csv), or a simulation's results (in the /output directory), you will need to explicitly do that before quitting PhysiCell Studio.
+* when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. Therefore, if you want to save results from a session, e.g., a model (.xml) or its initial conditions or rules (.csv), or a simulation's results (in the `/output` directory), you will need to explicitly do that before quitting PhysiCell Studio.
 * some functionality found in the desktop version is missing in the Galaxy version
 * a session remains active for about 24 hours
 * to reconnect a Studio session if it disconnects temporarily, simply refresh its web page 
-* there is only one /output directory for simulation results
-* when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the /output directory will be deleted and new simulation results will be written to /output (but will not persist across multiple Studio sessions)
+* there is only one `/output` directory for simulation results
+* when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the `/output` directory will be deleted and new simulation results will be written to `/output` (but will not persist across multiple Studio sessions)
 * output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
@@ -94,6 +94,12 @@ can use the "File -> put on History" menu to select those options.
 
 Upload a local file
 *******************
+
+Uploading a local file on your computer to be used in the Galaxy PhysiCell Studio is a bit
+more involved than saving results. This has to do with the fact that Galaxy thinks of files
+in the History as `data stores` with a unique ID, rather than having a unique filename.
+So, while it is easy to upload a local file to the History, accessing it from the Studio requires
+a few steps.
 
 .. image:: ./galaxy_imgs/galaxy_upload_ui_3steps.png
    :width: 600px
