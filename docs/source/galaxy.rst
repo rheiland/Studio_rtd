@@ -35,7 +35,8 @@ Initial comments
 * after the "Open" link appears, click it
 
 .. warning::
-If the "Open" link seems to take too long to appear, check to see if you have a previous Studio or another Interactive Tool already running (select the "Interactive Tools" icon in the left column). You are not allowed more than one Interactive Tool to run simultaneously.
+
+Note: If the "Open" link seems to take too long to appear, check to see if you have a previous Studio or another Interactive Tool already running (select the "Interactive Tools" icon in the left column). You are not allowed more than one Interactive Tool to run simultaneously.
 
 .. image:: ./galaxy_imgs/galaxy_pcstudio_0.png
 * click the `Run Tool` to open PhysiCell Studio in an adjacent tab of your browser
