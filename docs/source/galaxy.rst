@@ -59,7 +59,7 @@ Studio GUI settings
 
 .. image:: ./galaxy_imgs/pcstudio_remote_settings_widget.png
    :width: 600px
-* when the Studio appears in its own tab, its widgets will appear too small. To remedy this, click the "3 vertical dots" icon on the left border. It will display settings for the GUI.
+* when the Studio appears in its own browser tab, its widgets will appear too small. To remedy this, click the "3 vertical dots" icon on the left border. It will display settings for the GUI.
 
 .. image:: ./galaxy_imgs/pcstudio_remote_resizing.png
    :width: 600px
