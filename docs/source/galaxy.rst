@@ -3,7 +3,8 @@ Galaxy
 
 .. _galaxy:
 
-Warning: this page is under construction and review. 
+. note::
+    This page continues to evolve. We welcome feedback on our `Slack channel <https://physicellcomm-sf93727.slack.com/join/shared_invite/zt-36twj00ub-k4fR0vsyWWbSq3Aamuukbg#/shared-invite/email>`_
 
 Galaxy is a well known, Web-based platform of tools, aimed primarily at bioinformaticians, but
 has broadened in scope over the years. With generous help from the Galaxy community, we
