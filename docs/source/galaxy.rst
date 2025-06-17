@@ -24,6 +24,18 @@ Initial comments
 * output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
+Register for an account
+***********************
+
+.. image:: ./galaxy_imgs/register_account.png
+* Registering for a Galaxy account should be straightforward. 
+
+Login and start PhysiCell Studio
+********************************
+
+After successfully registering for and getting an account on Galaxy, you are ready to
+use its tools. The one of interest for this tutorial is PhysiCell Studio.
+
 .. image:: ./galaxy_imgs/galaxy_tools.png
 * the Galaxy Tools column lists all available tools. You can search for "PhysiCell Studio"
 
