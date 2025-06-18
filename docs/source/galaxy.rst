@@ -109,6 +109,10 @@ can use the "File -> put on History" menu to select those options.
 .. image:: ./galaxy_imgs/pcstudio_put_on_history2.png
    :width: 400px
 
+.. image:: ./galaxy_imgs/all_output_zip.png
+   :width: 400px
+* e.g., File -> put "all_output.zip" on the Galaxy History. From the History panel back on the main Galaxy tab, you can select its entry to expand it and then click the leftmost "Download" icon. It will download a file with a default name of `Galaxy<ID#>-\[all_output.zip\].zip`
+
 Upload a local file
 *******************
 
