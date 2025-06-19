@@ -288,6 +288,9 @@ We plot .svg data from the virus-macrophage simulation. The first is at t=0 and 
 .. image:: ./guide_imgs/plot_virus_t2.png
 .. image:: ./guide_imgs/plot_virus_t2_interferon.png
 
+Plot options
+************
+
 The `View` menu provides `Plot options` (in this case, for 2D plotting):
 
 .. image:: ./guide_imgs/filters2D_view_options.png
@@ -297,6 +300,9 @@ Most of these options will be self-explanatory when you use them. But note that 
 The `save frame*.png` will save sequentially numbered .png files in your output folder. To reset the counter, toggle off/on the checkbox. This is a first step to generating a movie (.gif or .mp4), but for now you will need to generate your own movie (via ImageMagick, etc) using the .png files as input.
 
 ---
+
+Population plot
+***************
 
 .. image:: ./guide_imgs/population_cell_type_plot_virus.png
    :width: 500px
@@ -331,3 +337,8 @@ Also, the combobox allows for a "filter" - if you type a string, e.g., "adhesion
 
 .. image:: ./guide_imgs/cell_scalars_heterog_filter.png
    :width: 300px
+
+Plot 3D
+*******
+
+Until we update this section, see https://github.com/PhysiCell-Tools/Studio-Guide/blob/main/README.md#plot-3d
