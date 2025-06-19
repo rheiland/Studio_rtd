@@ -41,7 +41,7 @@ use its tools. The one of interest for this tutorial is PhysiCell Studio.
 * the Galaxy Tools column lists all available tools. You can search for "PhysiCell Studio"
 
 .. image:: ./galaxy_imgs/pcstudio_wait_active.png
-* the tool takes some time (hopefully, just seconds) to become active
+* the tool takes some time (maybe a minute or two) to become active
 * notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use "File -> put on History".
 
 .. image:: ./galaxy_imgs/pcstudio_ready_to_open.png
