@@ -140,7 +140,7 @@ Cells exchange a differentiation factor across their contacts to model juxtacrin
 .. only:: html
 
   .. figure:: _static/worm.gif
-  .. video:: _static/worm.mp4
+  .. video:: ../_static/worm.mp4
       :width: 500
       :height: 500
       :autoplay:
