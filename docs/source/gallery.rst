@@ -139,13 +139,12 @@ Cells exchange a differentiation factor across their contacts to model juxtacrin
 
 .. only:: html
 
-    .. figure:: _static/worm.gif
-
-.. video:: worm.mp4
-    :width: 500
-    :height: 500
-    :autoplay:
-    :nocontrols:
+  .. figure:: _static/worm.gif
+  .. video:: worm.mp4
+      :width: 500
+      :height: 500
+      :autoplay:
+      :nocontrols:
 
 * 1 cell type: worm
 * 1 substrate: signal
