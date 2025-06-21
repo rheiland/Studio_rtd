@@ -25,8 +25,8 @@ Initial comments
 * output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
 * to save results manually, use the "File -> put on History" menu item.
 
-Register for a Galaxy (free) account
-************************************
+Register for a Galaxy account
+*****************************
 
 .. image:: ./galaxy_imgs/register_account.png
 * Registering for a Galaxy (https://usegalaxy.eu/) account should be straightforward. 
