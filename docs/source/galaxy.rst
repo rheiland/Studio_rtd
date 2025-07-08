@@ -28,7 +28,7 @@ Register for a Galaxy account
 *****************************
 
 .. image:: ./galaxy_imgs/register_account.png
-* Registering for a Galaxy (https://usegalaxy.eu/) account should be straightforward. 
+* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ and if you have problems, try https://usegalaxy.eu/ .
 
 Login and start PhysiCell Studio
 ********************************
