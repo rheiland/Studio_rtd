@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Galaxy &mdash; PhysiCell Studio 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gallery" href="gallery.html" />
+    <link rel="prev" title="Guide" href="guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PhysiCell Studio
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Galaxy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#initial-comments">Initial comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#register-for-a-galaxy-account">Register for a Galaxy account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#login-and-start-physicell-studio">Login and start PhysiCell Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#studio-gui-settings">Studio GUI settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#studio-overview">Studio overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reconnect-the-studio-session">Reconnect the Studio session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-results-locally">Saving results locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-a-local-file">Upload a local file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PhysiCell Studio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Galaxy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/galaxy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="galaxy">
+<h1>Galaxy<a class="headerlink" href="#galaxy" title="Permalink to this headline">¶</a></h1>
+<p id="id1">NOTE:  This page continues to evolve. We welcome feedback on our <a class="reference external" href="https://physicellcomm-sf93727.slack.com/join/shared_invite/zt-36twj00ub-k4fR0vsyWWbSq3Aamuukbg#/shared-invite/email">Slack channel</a></p>
+<p>Galaxy is a well known, Web-based platform of tools, aimed primarily at bioinformaticians, but
+has broadened in scope over the years. With generous help from the Galaxy community, we
+have ported PhysiCell Studio to run as an Interactive Tool. Currently, it is running on both the ORG and EU instances of Galaxy. If you do
+not yet have an account, register for one - it is free and requires very little information.
+Once you have an account, login and follow the steps below to run PhysiCell Studio.</p>
+<div class="section" id="initial-comments">
+<h2>Initial comments<a class="headerlink" href="#initial-comments" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>currently only 2D models are allowed</li>
+<li>when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. Therefore, if you want to save results from a session, e.g., a model (.xml) or its initial conditions or rules (.csv), or a simulation’s results (in the <cite>/output</cite> directory), you will need to explicitly do that before quitting PhysiCell Studio.</li>
+<li>some functionality found in the desktop version is missing in the Galaxy version</li>
+<li>a session remains active for about 24 hours</li>
+<li>there is only one <cite>/output</cite> directory for simulation results</li>
+<li>when you “Run” a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the <cite>/output</cite> directory will be deleted and new simulation results will be written to <cite>/output</cite> (but will not persist across multiple Studio sessions)</li>
+<li>output results (5 files) will be automatically saved only when one quits the tool (“Studio menu -&gt; Quit”)</li>
+<li>to save results manually, use the “File -&gt; put on History” menu item.</li>
+</ul>
+</div>
+<div class="section" id="register-for-a-galaxy-account">
+<h2>Register for a Galaxy account<a class="headerlink" href="#register-for-a-galaxy-account" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/register_account.png" src="_images/register_account.png" />
+<ul class="simple">
+<li>Registering for a Galaxy account should be straightforward. Try to register at <a class="reference external" href="https://usegalaxy.org/">https://usegalaxy.org/</a> and if you have problems, try <a class="reference external" href="https://usegalaxy.eu/">https://usegalaxy.eu/</a> .</li>
+</ul>
+</div>
+<div class="section" id="login-and-start-physicell-studio">
+<h2>Login and start PhysiCell Studio<a class="headerlink" href="#login-and-start-physicell-studio" title="Permalink to this headline">¶</a></h2>
+<p>After successfully registering for and getting an account on Galaxy, you are ready to
+use its tools. The one of interest for this tutorial is PhysiCell Studio.</p>
+<img alt="_images/galaxy_tools.png" src="_images/galaxy_tools.png" />
+<ul class="simple">
+<li>the Galaxy Tools column lists all available tools. You can search for “PhysiCell Studio”</li>
+</ul>
+<img alt="_images/pcstudio_wait_active.png" src="_images/pcstudio_wait_active.png" />
+<ul class="simple">
+<li>the tool takes some time (maybe a minute or two) to become active</li>
+<li>notice that the tool “produces 5 outputs”. However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use “File -&gt; put on History”.</li>
+</ul>
+<img alt="_images/pcstudio_ready_to_open.png" src="_images/pcstudio_ready_to_open.png" />
+<ul class="simple">
+<li>after the “Open” link appears, click it</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If the “Open” link seems to take too long to appear, check to see if you have a previous Studio or another Interactive Tool already running (select the “Interactive Tools” icon in the left column). You are not allowed more than one Interactive Tool to run simultaneously.</p>
+</div>
+<img alt="_images/galaxy_pcstudio_0.png" src="_images/galaxy_pcstudio_0.png" />
+<ul class="simple">
+<li>click the <cite>Run Tool</cite> to open PhysiCell Studio in an adjacent tab of your browser</li>
+</ul>
+</div>
+<div class="section" id="studio-gui-settings">
+<h2>Studio GUI settings<a class="headerlink" href="#studio-gui-settings" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/pcstudio_remote_settings_widget.png"><img alt="_images/pcstudio_remote_settings_widget.png" src="_images/pcstudio_remote_settings_widget.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>when the Studio appears in its own browser tab, its widgets will appear too small. To remedy this, click the “3 vertical dots” icon on the left border. It will display settings for the GUI.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/pcstudio_remote_resizing.png"><img alt="_images/pcstudio_remote_resizing.png" src="_images/pcstudio_remote_resizing.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>then select the “Scaling Mode” dropdown menu and select “Remote Resizing”. This should improve the overall usability of the GUI.</li>
+</ul>
+<img alt="_images/pcstudio_run_sim0.png" src="_images/pcstudio_run_sim0.png" />
+<ul class="simple">
+<li>to run the default simulation, click the Run tab and press the “Run simulation” button.</li>
+</ul>
+</div>
+<div class="section" id="studio-overview">
+<h2>Studio overview<a class="headerlink" href="#studio-overview" title="Permalink to this headline">¶</a></h2>
+<p>At this point, you should be able to follow instructions elsewhere for basic use of the Studio.
+<a class="reference external" href="https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics">https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics</a> . HOWEVER, you will want to return to this page for Galaxy-specific instructions, especially regarding loading files and saving simulation results.</p>
+<a class="reference internal image-reference" href="_images/file_open.png"><img alt="_images/file_open.png" src="_images/file_open.png" style="width: 200px;" /></a>
+<ul class="simple">
+<li>to open a different model that comes with PhysiCell Studio: File -&gt; Open</li>
+</ul>
+<a class="reference internal image-reference" href="_images/file_open_config.png"><img alt="_images/file_open_config.png" src="_images/file_open_config.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/file_open_config_xml.png"><img alt="_images/file_open_config_xml.png" src="_images/file_open_config_xml.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li>select one of the .xml files to explore a different model (the default, PhysiCell_settings.xml, is identical to template.xml)</li>
+</ul>
+<img alt="_images/pcstudio_put_on_history.png" src="_images/pcstudio_put_on_history.png" />
+<ul class="simple">
+<li>save various output results to the Galaxy History (found on the main Galaxy browser tab)</li>
+</ul>
+</div>
+<div class="section" id="reconnect-the-studio-session">
+<h2>Reconnect the Studio session<a class="headerlink" href="#reconnect-the-studio-session" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/pcstudio_refresh_to_reconnect.png"><img alt="_images/pcstudio_refresh_to_reconnect.png" src="_images/pcstudio_refresh_to_reconnect.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li>if you see “pcstudio - Disconnected”, it should automatically reconnect (in the latest version of Galaxy); however, if not, just refresh this page in your browser to manually reconnect.</li>
+</ul>
+</div>
+<div class="section" id="saving-results-locally">
+<h2>Saving results locally<a class="headerlink" href="#saving-results-locally" title="Permalink to this headline">¶</a></h2>
+<p>Output results from building a model and running a simulation will automatically be
+saved to the Galaxy History 1) only when the user explicitly quits PhysiCell Studio (Studio -&gt; Quit)
+or 2) the Studio has exceeded its maximum Galaxy run time for a tool (~24 hours).</p>
+<p>If you want to save intermediate results, e.g., the current model definition (.xml), any
+initial conditions (.csv), any rules (.csv), or the entire <cite>/output</cite> results (.xml, .svg, .mat, .txt), then you
+can use the “File -&gt; put on History” menu to select those options.</p>
+<a class="reference internal image-reference" href="_images/pcstudio_put_on_history2.png"><img alt="_images/pcstudio_put_on_history2.png" src="_images/pcstudio_put_on_history2.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/all_output_zip.png"><img alt="_images/all_output_zip.png" src="_images/all_output_zip.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li>e.g., File -&gt; put “all_output.zip” on the Galaxy History. From the History panel back on the main Galaxy tab, you can select its entry to expand it and then click the leftmost “Download” icon. It will download a file with a default name of <cite>Galaxy&lt;ID#&gt;-[all_output.zip].zip</cite></li>
+</ul>
+</div>
+<div class="section" id="upload-a-local-file">
+<h2>Upload a local file<a class="headerlink" href="#upload-a-local-file" title="Permalink to this headline">¶</a></h2>
+<p>Uploading a local file on your computer to be used in the Galaxy PhysiCell Studio is a bit
+more involved than saving results. This has to do with the fact that Galaxy thinks of files
+in the History as <cite>data stores</cite> with a unique ID, rather than having a unique filename.
+So, while it is easy to upload a local file to the History, accessing it from the Studio requires
+a few steps.</p>
+<a class="reference internal image-reference" href="_images/galaxy_upload_ui_3steps.png"><img alt="_images/galaxy_upload_ui_3steps.png" src="_images/galaxy_upload_ui_3steps.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>on the main Galaxy interface, use the Upload tool to get a file from your local computer. It will appear in the Galaxy History. You may want to use this to upload a model config file (.xml), or initial conditions (.csv), or rules for cell signals/behaviors (.csv).</li>
+</ul>
+<a class="reference internal image-reference" href="_images/upload_file_3_stages.png"><img alt="_images/upload_file_3_stages.png" src="_images/upload_file_3_stages.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>in the Galaxy History, the new file will appear in 3 stages (a job starts (gray) to upload it, the job runs (orange), the job completes (green))</li>
+</ul>
+<a class="reference internal image-reference" href="_images/get_from_history_steps.png"><img alt="_images/get_from_history_steps.png" src="_images/get_from_history_steps.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>in the Studio, use “File -&gt; get from History” to get this file (by ID). Note that a “get” will write the file to the <cite>/import</cite> directory. Therefore, enter <cite>/import</cite> into the text widget next to the <cite>dir</cite> button then press the button to show the contents of that directory.</li>
+</ul>
+<p>The steps to get a model config file (.xml) from the History and use it in the Studio are:</p>
+<ul class="simple">
+<li>“File -&gt; get from History” :  e.g., “get(133)” and it will save the file to “/import/133”</li>
+<li>“File -&gt; Open” that file; verify it displays correctly in the Studio.</li>
+<li>optionally, “File -&gt; Save as” to /opt/pcstudio/config/model133.xml ; then re-Open that</li>
+<li>“File -&gt; put on History -&gt; current config .xml”  (will put model133.xml there)</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gallery.html" class="btn btn-neutral float-right" title="Gallery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="guide.html" class="btn btn-neutral float-left" title="Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2024-25, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin. Thanks to the entire MathCancer Lab (past and present members) at Indiana University, the broader PhysiCell community, and many undergraduate students who have made valuable contributions. A special thanks to Aydan Bondurant (Fall 2024) who contributed the automated build for these readthedocs. For help porting to the Galaxy platform, we thank Bjoern Gruening, Enis Afgan, Junhao Qiu, Jeremy Goecks, and others in the community who helped us resolve issues.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

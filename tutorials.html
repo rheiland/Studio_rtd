@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorials &mdash; PhysiCell Studio 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PhysiCell Studio
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="galaxy.html">Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PhysiCell Studio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tutorials</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tutorials.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorials">
+<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="template-model-default">
+<span id="id1"></span><h2>Template model: default<a class="headerlink" href="#template-model-default" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/studio_template_config.PNG" src="_images/studio_template_config.PNG" />
+<ul class="simple">
+<li>the Configuration Basics tab that defines the domain and various high-level simulation parameters</li>
+</ul>
+<img alt="_images/studio_template_microenv.PNG" src="_images/studio_template_microenv.PNG" />
+<ul class="simple">
+<li>the Microenvironment tab where substrates and signals are defined. Just one substrate is defined in the default <cite>template</cite> model, but it is not used (yet).</li>
+</ul>
+<img alt="_images/studio_template_celltypes.PNG" src="_images/studio_template_celltypes.PNG" />
+<ul class="simple">
+<li>the Cell Types tab where different cell types can be defined to have different phenotypic behaviors. For the default <cite>template</cite> model, there is only one cell type defined (initially). Note there are subtabs which define each cell type’s phenotype. If you look at some of those subtabs, you’ll see that the default <cite>template</cite> model allows cell death and mechanics, but no motility and no secretion/uptake of the substrate.</li>
+</ul>
+<img alt="_images/studio_template_run.PNG" src="_images/studio_template_run.PNG" />
+<ul class="simple">
+<li>click the <cite>Run simulation</cite>. Information about the overall model will quickly appear, followed by delayed output lines whenever output files are saved (based on the time intervals on the <cite>Config Basics</cite> tab).</li>
+</ul>
+<img alt="_images/studio_template_plot_t0.PNG" src="_images/studio_template_plot_t0.PNG" />
+<ul class="simple">
+<li>At time=0, we see the initial conditions: 5 cells positioned randomly in the domain. Note the “5” is specified in the <cite>User Params</cite> tab as the “number_of_cells”.</li>
+</ul>
+<img alt="_images/studio_template_plot_5days.PNG" src="_images/studio_template_plot_5days.PNG" />
+<ul class="simple">
+<li>Results (cells) at the end of the simulation (5 days).</li>
+</ul>
+</div>
+<div class="section" id="template-model-disk-for-ics">
+<h2>Template model: disk for ICs<a class="headerlink" href="#template-model-disk-for-ics" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/studio_template_ICs_disk.PNG" src="_images/studio_template_ICs_disk.PNG" />
+<ul class="simple">
+<li>the <cite>ICs</cite> (Initial Conditions) tab, let’s define some relatively simple starting positions for cells. The output will be a .csv file containing: <cite>x,y,z,cell type</cite> Here, we create a disk of hexagonally packed cells. Press <cite>Plot</cite> to see results and <cite>-&gt;cells.csv</cite> to write the .csv file. You will then provide this .csv filename on the Config Basics tab.</li>
+</ul>
+<img alt="_images/studio_template_config_ICs_enable_csv.PNG" src="_images/studio_template_config_ICs_enable_csv.PNG" />
+<ul class="simple">
+<li>In the <cite>Config Basics</cite> tab, we need to enable (check) the cells.csv and change the folder to be “.”</li>
+</ul>
+<img alt="_images/studio_template_user_params_no_random_cells.PNG" src="_images/studio_template_user_params_no_random_cells.PNG" />
+<ul class="simple">
+<li>the <cite>User Params</cite> tab defines parameters considered to be “global” to a simulation (vs. <cite>Custom Data</cite>, the subtab in <cite>Cell Types</cite> which define parameters specific to cell types). Here, we change # of randomly placed cells to be 0 (because we only want to use the cells defined in the .csv file).</li>
+</ul>
+<img alt="_images/studio_template_run_disk.PNG" src="_images/studio_template_run_disk.PNG" />
+<ul class="simple">
+<li>when we run the simulation now, we see there are 1150 cells initially (all from the cells.csv).</li>
+</ul>
+<img alt="_images/studio_template_plot_disk_5hr.PNG" src="_images/studio_template_plot_disk_5hr.PNG" />
+<ul class="simple">
+<li>results after 5 hours.</li>
+</ul>
+<img alt="_images/studio_template_plot_disk_20hr.PNG" src="_images/studio_template_plot_disk_20hr.PNG" />
+<ul class="simple">
+<li>results after 20 hours. Note the cells are unrealistically overlapping, a situation we can adjust with additional edits to the model.</li>
+</ul>
+</div>
+<div class="section" id="template-model-diffusion">
+<h2>Template model: diffusion<a class="headerlink" href="#template-model-diffusion" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/template_diffusion_config.png" src="_images/template_diffusion_config.png" />
+<ul class="simple">
+<li>In this version of the model, we will allow diffusion of the substrate. First, in the Config tab, let’s reduce the Max Time to 120 mins, set the Save intervals to 5 mins, and disable (uncheck) the cells.csv. Also, in the <cite>User Params</cite> tab, let’s set the “number_of_cells” to 10 (not shown here).</li>
+</ul>
+<img alt="_images/template_diffusion_microenv.png" src="_images/template_diffusion_microenv.png" />
+<ul class="simple">
+<li>In the <cite>Microenvironment</cite> tab, set the diffusion coef=1000, decay rate=0, and Dirichlet Boundary Conditions=38. In the <cite>Run</cite> tab, run the simulation.</li>
+</ul>
+<img alt="_images/template_diffusion_plot5min.png" src="_images/template_diffusion_plot5min.png" />
+<ul class="simple">
+<li>In the <cite>Plot</cite> tab, <strong>check</strong> “Substrates” to display them and <strong>check</strong> “fix” to fix absolute values for the color map (cmin=0, cmax=38, and press Enter after changing those values). Then plot the results at 5 mins.</li>
+</ul>
+<img alt="_images/template_diffusion_plot2hrs.png" src="_images/template_diffusion_plot2hrs.png" />
+<ul class="simple">
+<li>Plot the results at the end of the simulation (2 hrs). Note the substrate has diffused throughout the domain from the boundaries.</li>
+</ul>
+<img alt="_images/template_diffusion_plot2hrs_cmap2.png" src="_images/template_diffusion_plot2hrs_cmap2.png" />
+<ul class="simple">
+<li>Note if you uncheck “fix”, the colormap will have a dynamic range, using whatever is min/max in the substrate data.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2024-25, Randy Heiland, Daniel Bergman, Marco Ruscone, Heber Rocha, Vincent Noel, Paul Macklin. Thanks to the entire MathCancer Lab (past and present members) at Indiana University, the broader PhysiCell community, and many undergraduate students who have made valuable contributions. A special thanks to Aydan Bondurant (Fall 2024) who contributed the automated build for these readthedocs. For help porting to the Galaxy platform, we thank Bjoern Gruening, Enis Afgan, Junhao Qiu, Jeremy Goecks, and others in the community who helped us resolve issues.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
