@@ -29,7 +29,7 @@ PhysiCell Studio requires Python and some additional modules listed in `requirem
 * Windows: Python from the Microsoft Store
 * Anaconda: any OS, but bundled with LOTS of additional modules: https://www.anaconda.com/products/individual
 
-After you have installed Python, you will need to open a terminal window (e.g., Command Prompt on Windows), change directory to where you installed the PhysiCell Studio source code, and run `pip requirements.txt` (or possibly `pip3 requirements.txt`).
+After you have installed Python, you will need to open a terminal window (e.g., Command Prompt on Windows), change directory to where you installed the PhysiCell Studio source code, and run `pip install -r requirements.txt` (or possibly `pip3 install -r requirements.txt`).
 
 
 Running
