@@ -94,26 +94,48 @@ Reconnect the Studio session
    :width: 400px
 * if you see "pcstudio - Disconnected", it should automatically reconnect (in the latest version of Galaxy); however, if not, just refresh this page in your browser to manually reconnect.
 
-Saving results locally
-**********************
+Saving your model (and data)
+****************************
 
-Output results from building a model and running a simulation will automatically be 
-saved to the Galaxy History 1) only when the user explicitly quits PhysiCell Studio (Studio -> Quit)
-or 2) the Studio has exceeded its maximum Galaxy run time for a tool (~24 hours).
+It is good practice to incrementally save the model you are developing. This is especially true
+for an interactive cloud-hosted application like PhysiCell Studio running in Galaxy. So, as you 
+edit parameters, run a [partial] simulation, plot results, and like what you see (or maybe 
+don't like it, but want to keep it anyway) - you can save the current state of your model 
+and, optionally, the simulation output. However, it is not possible to directly save these files
+to your computer from PhysiCell Studio in Galaxy. Rather, you need to save files to the Galaxy
+History (on your Galaxy main panel) and from there you can easily download to your computer. The
+Galaxy History (right-hand column of the main Galaxy panel) therefore serves as an intermediate
+staging location for saving your model and data. It will also be used to upload a model from
+your computer so that it can be loaded into PhysiCell Studio (next section).
 
-If you want to save intermediate results, e.g., the current model definition (.xml), any 
-initial conditions (.csv), any rules (.csv), or the entire `/output` results (.xml, .svg, .mat, .txt), then you
-can use the "File -> put on History" menu to select those options. 
+The easiest way to save the current model definition (.xml), any 
+initial conditions (.csv), any rules (.csv), and the entire `/output` results 
+(.xml, .svg, .mat, .txt), is to select
+the "File -> put on History -> all_output.zip" menu item. If you select that, a popup notice 
+will appear giving you more information (unfortunately, we do not currently let you Cancel this 
+action; however, once the file appears on the History, you can delete it). 
+Once you initiate this "put on History" action, a new entry will appear at the top of the 
+History column (on the main Galaxy panel). Initially, it will be orange-colored indicating it is
+working. If it is successful, it will turn green; if unsuccessful, it will turn red, e.g., if you hadn't run a partial simulation to generate output files.
 
 .. image:: ./galaxy_imgs/pcstudio_put_on_history2.png
    :width: 400px
 
 .. image:: ./galaxy_imgs/all_output_zip.png
-   :width: 400px
-* e.g., File -> put "all_output.zip" on the Galaxy History. From the History panel back on the main Galaxy tab, you can select its entry to expand it and then click the leftmost "Download" icon. It will download a file with a default name of `Galaxy<ID#>-\[all_output.zip\].zip`
+   :width: 400px 
+* From the History panel on the main Galaxy tab, you can select an entry to expand it and then click the leftmost "Download" icon. It will download a file with a default name of `Galaxy<ID#>-\[all_output.zip\].zip` . Optionally, you can delete the file (trash can icon in upper-right).
 
-Upload a local file
-*******************
+Output results from building a model and running a simulation will automatically be 
+saved to the Galaxy History 1) only when the user explicitly quits PhysiCell Studio (Studio -> Quit)
+or 2) the Studio has exceeded its maximum Galaxy run time for a tool (~24 hours).
+
+The benefit of having files (technically, "data stores" in Galaxy terminology) in the History
+is that you can more easily load them into a future PhysiCell Studio session. However, sometimes
+you may need to upload a PhysiCell model from your computer and that is discussed in the 
+next section.
+
+Loading a local model
+*********************
 
 Uploading a local file on your computer to be used in the Galaxy PhysiCell Studio is a bit
 more involved than saving results. This has to do with the fact that Galaxy thinks of files
