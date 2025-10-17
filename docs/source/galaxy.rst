@@ -97,7 +97,7 @@ Reconnect the Studio session
 Saving your model (and data)
 ****************************
 
-It is good practice to incrementally save the model you are developing. This is especially true
+It is GOOD PRACTICE TO INCREMENTALLY SAVE the model you are developing. This is especially true
 for an interactive cloud-hosted application like PhysiCell Studio running in Galaxy. So, as you 
 edit parameters, run a [partial] simulation, plot results, and like what you see (or maybe 
 don't like it, but want to keep it anyway) - you can save the current state of your model 
