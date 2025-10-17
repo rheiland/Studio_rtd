@@ -108,7 +108,7 @@ Galaxy History (right-hand column of the main Galaxy panel) therefore serves as 
 staging location for saving your model and data. It will also be used to upload a model from
 your computer so that it can be loaded into PhysiCell Studio (next section).
 
-The easiest way to save the current model definition (.xml), any 
+Currently, the easiest way to save the current model definition (.xml), any 
 initial conditions (.csv), any rules (.csv), and the entire `/output` results 
 (.xml, .svg, .mat, .txt), is to select
 the "File -> put on History -> all_output.zip" menu item. If you select that, a popup notice 
@@ -121,9 +121,15 @@ working. If it is successful, it will turn green; if unsuccessful, it will turn 
 .. image:: ./galaxy_imgs/pcstudio_put_on_history2.png
    :width: 400px
 
+Note the "File -> put on History" menu has two other choices: "current config .xml" and "all_csv.zip".
+The first will save just your model's configuration (.xml) file. The second will save any
+.csv files that it uses, e.g., cells initial conditions and rules. Selecting one or both of these
+will avoid saving all of your simulation output files which could be quite large. We plan to 
+streamline these operations in a future release.
+
 .. image:: ./galaxy_imgs/all_output_zip.png
    :width: 400px 
-* From the History panel on the main Galaxy tab, you can select an entry to expand it and then click the leftmost "Download" icon. It will download a file with a default name of `Galaxy<ID#>-\[all_output.zip\].zip` . Optionally, you can delete the file (trash can icon in upper-right).
+To save a file in the History to your local computer: click the entry to expand it and then click the leftmost "Download" icon. It should prompt you to save the file as `Galaxy<ID#>-\<filename>`. Optionally, you can delete the file (trash can icon in upper-right).
 
 Output results from building a model and running a simulation will automatically be 
 saved to the Galaxy History 1) only when the user explicitly quits PhysiCell Studio (Studio -> Quit)
