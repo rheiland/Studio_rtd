@@ -104,10 +104,12 @@ don't like it, but want to keep it anyway) - you can save the current state of y
 using the `File -> Save project` menu option:
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj.png
+   :width: 400px
 
 This will notify you of what happens next: it will create and copy `project.zip` to your History column on the main Galaxy panel.
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg.png
+   :width: 500px
 
 When you do this, a `project.zip` entry will appear in your Galaxy History (it may take a 
 few seconds to appear). If you click on that entry, it will expand and reveal a download 
@@ -115,7 +117,7 @@ icon that, when clicked, will download it to your local computer and give it an 
 `Galaxy<ID#>-\<filename>`. 
 
 .. image:: ./galaxy_imgs/project_zip_download.png
-   :width: 400px
+   :width: 500px
 
 Unzipping that file on your computer will provide the 
 files that define your project, typically: PhysiCell_settings.xml, cell_rules.csv, and cells.csv.
