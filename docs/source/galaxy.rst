@@ -117,7 +117,7 @@ icon that, when clicked, will download it to your local computer and give it an 
 `Galaxy<ID#>-\<filename>`. 
 
 .. image:: ./galaxy_imgs/project_zip_download.png
-   :width: 500px
+   :width: 600px
 
 Unzipping that file on your computer will provide the 
 files that define your project, typically: PhysiCell_settings.xml, cell_rules.csv, and cells.csv.
