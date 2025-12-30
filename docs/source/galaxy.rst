@@ -73,20 +73,6 @@ Studio overview
 At this point, you should be able to follow instructions elsewhere for basic use of the Studio. 
 https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . HOWEVER, you will want to return to this page for Galaxy-specific instructions, especially regarding loading files and saving simulation results.
 
-.. image:: ./galaxy_imgs/file_open.png
-   :width: 200px
-* to open a different model that comes with PhysiCell Studio: File -> Open 
-
-.. image:: ./galaxy_imgs/file_open_config.png
-   :width: 500px
-
-.. image:: ./galaxy_imgs/file_open_config_xml.png
-   :width: 500px
-* select one of the .xml files to explore a different model (the default, PhysiCell_settings.xml, is identical to template.xml)
-
-.. image:: ./galaxy_imgs/pcstudio_put_on_history.png
-* save various output results to the Galaxy History (found on the main Galaxy browser tab)
-
 Reconnect the Studio session
 ****************************
 
