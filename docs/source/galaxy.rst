@@ -8,7 +8,7 @@ NOTE:  This page continues to evolve. We welcome feedback on our `Slack channel 
 
 Galaxy is a well known, Web-based platform of tools, aimed primarily at bioinformaticians, but
 has broadened in scope over the years. With generous help from the Galaxy community, we
-have ported PhysiCell Studio to run as an Interactive Tool. Currently, it is running on both the ORG and EU instances of Galaxy. If you do
+have ported PhysiCell Studio to run as an Interactive Tool. If you do
 not yet have an account, register for one - it is free and requires very little information.
 Once you have an account, login and follow the steps below to run PhysiCell Studio.
 
@@ -22,13 +22,13 @@ Initial comments
 * there is only one `/output` directory for simulation results
 * when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the `/output` directory will be deleted and new simulation results will be written to `/output` (but will not persist across multiple Studio sessions)
 * output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
-* to save results manually, use the "File -> put on History" menu item.
+* to incrementally save your model as you are developing it (_highly_ recommended), use the "File -> Save project" menu item. This will save a `project.zip` onto your Galaxy History (details below)
 
 Register for a Galaxy account
 *****************************
 
 .. image:: ./galaxy_imgs/register_account.png
-* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ and if you have problems, try https://usegalaxy.eu/ .
+* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ .
 
 Login and start PhysiCell Studio
 ********************************
