@@ -90,7 +90,7 @@ don't like it, but want to keep it anyway) - you can save the current state of y
 using the `File -> Save project` menu option:
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj.png
-   :width: 300px
+   :width: 200px
 
 This will notify you of what happens next: it will create and copy `my_model.zip` to your History column on the main Galaxy panel.
 
