@@ -41,7 +41,7 @@ use its tools. The one of interest for this tutorial is PhysiCell Studio.
 
 .. image:: ./galaxy_imgs/pcstudio_wait_active.png
 * the tool takes some time (maybe a minute or two) to become active
-* notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use "File -> put on History".
+* notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use "File -> Save project".
 
 .. image:: ./galaxy_imgs/pcstudio_ready_to_open.png
 * after the "Open" link appears, click it
@@ -90,14 +90,14 @@ don't like it, but want to keep it anyway) - you can save the current state of y
 using the `File -> Save project` menu option:
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj.png
-   :width: 400px
+   :width: 300px
 
-This will notify you of what happens next: it will create and copy `project.zip` to your History column on the main Galaxy panel.
+This will notify you of what happens next: it will create and copy `my_model.zip` to your History column on the main Galaxy panel.
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg.png
    :width: 500px
 
-When you do this, a `project.zip` entry will appear in your Galaxy History (it may take a 
+When you do this, a `my_model.zip` entry will appear in your Galaxy History (it may take a 
 few seconds to appear). If you click on that entry, it will expand and reveal a download 
 icon that, when clicked, will download it to your local computer and give it an expanded name,
 `Galaxy<ID#>-\<filename>`. 
