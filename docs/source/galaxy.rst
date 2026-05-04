@@ -117,11 +117,11 @@ To load a previously saved project, use the `File -> Load project` menu option:
    :width: 200px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj_ui.png
-   :width: 600px
+   :width: 500px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj_msg1.png
-   :width: 500px
+   :width: 400px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj_msg2.png
-   :width: 500px
+   :width: 400px
 
