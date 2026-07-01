@@ -145,10 +145,13 @@ Then in PhysiCell Studio, use the `Studio -> Settings` panel to get the PAT by p
 
 Then you can use the `File -> Export project` menu option:
 
+.. image:: ./galaxy_imgs/file_export_menu.png
+   :width: 200px
+
+It will request the necessary information and explain what happens next.
 .. image:: ./galaxy_imgs/export_to_github.png
    :width: 400px
 
-It will step you through the remaining steps.
 
 Importing your project
 **********************
