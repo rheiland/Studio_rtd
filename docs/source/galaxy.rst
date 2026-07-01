@@ -130,7 +130,7 @@ Exporting your project
 
 An alternative to saving your project to the Galaxy History is to Export it to a GitHub repository.
 However, it does require some additional effort.
-First, you need to create a `(Fine-grained) Personal Access Token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens` for the GitHub repo(s). Then you
+First, you need to create a `(Fine-grained) Personal Access Token <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>` for the GitHub repo(s). Then you
 need to upload this PAT to your Galaxy History:
 1. In Galaxy, click **Upload Data**
 2. Choose **Paste/Fetch Data**
@@ -138,15 +138,15 @@ need to upload this PAT to your Galaxy History:
 4. Set the format to `txt`, give it a name like `github_token` (with no obvious name in history if you're privacy-conscious)
 5. Click **Start** — it becomes a dataset in your history
 
-Then in PhysiCell Studio, use the `Studio -> Settings` panel to get the PAT (one time per session):
+Then in PhysiCell Studio, use the `Studio -> Settings` panel to get the PAT by providing its History ID (you only need to do this once per Studio session):
 
 .. image:: ./galaxy_imgs/get_PAT.png
-   :width: 200px
+   :width: 300px
 
 Then you can use the `File -> Export project` menu option:
 
 .. image:: ./galaxy_imgs/export_to_github.png
-   :width: 200px
+   :width: 300px
 
 It will step you through the remaining steps.
 
@@ -157,4 +157,4 @@ You can also import a project (.zip) from a GitHub repo. This does not require a
 Selecting `File -> Import project` will request the necessary information and step you through it.
 
 .. image:: ./galaxy_imgs/import_from_github.png
-   :width: 200px
+   :width: 400px
