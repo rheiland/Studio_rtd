@@ -130,7 +130,7 @@ Exporting your project
 
 An alternative to saving your project to the Galaxy History is to Export it to a GitHub repository.
 However, it does require some additional effort.
-First, you need to create a `(Fine-grained) Personal Access Token <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>` for the GitHub repo(s). Then you
+First, you need to create a `(Fine-grained) Personal Access Token (PAT) <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`_ for the GitHub repo(s). Then you
 need to upload this PAT to your Galaxy History:
 1. In Galaxy, click **Upload Data**
 2. Choose **Paste/Fetch Data**
