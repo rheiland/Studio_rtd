@@ -96,7 +96,7 @@ This will prompt you to name your project, e.g., `my_model.zip` (or whatever you
 and will zip together the relevant files and copy the .zip to your History column on the main Galaxy panel.
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj_zip.png
-   :width: 200px
+   :width: 500px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg2.png
    :width: 500px
