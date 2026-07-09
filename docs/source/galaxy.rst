@@ -92,13 +92,17 @@ using the `File -> Save project` menu option:
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj.png
    :width: 200px
 
-This will notify you of what happens next: it will create and copy `my_model.zip` to your History column on the main Galaxy panel.
+This will prompt you to name your project, e.g., `my_model.zip` (or whatever you choose to name it) 
+and will zip together the relevant files and copy the .zip to your History column on the main Galaxy panel.
 
-.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg.png
+.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_zip.png
+   :width: 200px
+
+.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg2.png
    :width: 500px
 
-When you do this, a `my_model.zip` entry will appear in your Galaxy History (it may take a 
-few seconds to appear). If you click on that entry, it will expand and reveal a download 
+Note that it may take a few seconds for the `.zip` project to appear in your Galaxy History.
+If you click on that entry, it will expand and reveal a download 
 icon that, when clicked, will download it to your local computer and give it an expanded name,
 `Galaxy<ID#>-\<filename>`. 
 
