@@ -162,7 +162,9 @@ Importing your project
 **********************
 
 You can also import a project (.zip) from a GitHub repo. This does not require a PAT (for a public repo). 
-Selecting `File -> Import project` will request the necessary information and step you through it.
+Selecting `File -> Import project` will request the necessary information and step you through it. Once it
+completes, you will need to do `File -> Open` the .xml configuration file which is probably in the `config`
+directory.
 
 .. image:: ./galaxy_imgs/import_from_github.png
    :width: 400px
