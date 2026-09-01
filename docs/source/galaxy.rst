@@ -27,7 +27,8 @@ Register for a Galaxy account
 *****************************
 
 .. image:: ./galaxy_imgs/usegalaxy_register_login3.png
-* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ . After you register, check you email for a confirmation message.
+* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ . After you register, check your email for a confirmation message.
+* After you have registered (one time), you just need to Login to your account.
 
 Login and start PhysiCell Studio
 ********************************
@@ -165,9 +166,9 @@ Saving simulation results
 To save all simulation results, you can use the `Misc -> put on History -> all_output.zip` menu item. This can take some time, depending on how many output files you have.
 
 .. image:: ./galaxy_imgs/put_all_output_zip.png
-   :width: 300px
+   :width: 350px
 
 Once it has been zipped and copied to your History, you can download it to your desktop computer:
 
 .. image:: ./galaxy_imgs/all_output_zip.png
-   :width: 400px
+   :width: 500px
