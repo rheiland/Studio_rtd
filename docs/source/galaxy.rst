@@ -157,3 +157,17 @@ directory.
 
 .. image:: ./galaxy_imgs/import_from_github.png
    :width: 400px
+
+
+Saving simulation results
+*************************
+
+To save all simulation results, you can use the `Misc -> put on History -> all_output.zip` menu item. This can take some time, depending on how many output files you have.
+
+.. image:: ./galaxy_imgs/put_all_output_zip.png
+   :width: 300px
+
+Once it has been zipped and copied to your History, you can download it to your desktop computer:
+
+.. image:: ./galaxy_imgs/all_output_zip.png
+   :width: 400px
