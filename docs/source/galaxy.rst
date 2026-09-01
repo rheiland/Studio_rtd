@@ -16,19 +16,18 @@ Initial comments
 ****************
 
 * currently only 2D models are allowed
-* when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. Therefore, if you want to save results from a session, e.g., a model (.xml) or its initial conditions or rules (.csv), or a simulation's results (in the `/output` directory), you will need to explicitly do that before quitting PhysiCell Studio.
+* when you run PhysiCell Studio, it starts from scratch, i.e., it does not retain the results from a previous session. However, it is possible to load a previous model. To incrementally save your model as you are developing it (**highly recommended**), use the "File -> Save project" menu item. This will save a `.zip` onto your Galaxy History (details below)
 * some functionality found in the desktop version is missing in the Galaxy version
 * a session remains active for about 24 hours
 * there is only one `/output` directory for simulation results
 * when you "Run" a simulation (in the Run tab), the current .xml model config file will be overwritten with any changes to model parameters, and all existing files in the `/output` directory will be deleted and new simulation results will be written to `/output` (but will not persist across multiple Studio sessions)
-* output results (5 files) will be automatically saved only when one quits the tool ("Studio menu -> Quit")
-* to incrementally save your model as you are developing it (_highly_ recommended), use the "File -> Save project" menu item. This will save a `project.zip` onto your Galaxy History (details below)
+* output results (5 files) will be automatically saved only when you quit ("Studio menu -> Quit")
 
 Register for a Galaxy account
 *****************************
 
-.. image:: ./galaxy_imgs/register_account.png
-* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ .
+.. image:: ./galaxy_imgs/usegalaxy_register_login3.png
+* Registering for a Galaxy account should be straightforward. Try to register at https://usegalaxy.org/ . After you register, check you email for a confirmation message.
 
 Login and start PhysiCell Studio
 ********************************
@@ -41,7 +40,7 @@ use its tools. The one of interest for this tutorial is PhysiCell Studio.
 
 .. image:: ./galaxy_imgs/pcstudio_wait_active.png
 * the tool takes some time (maybe a minute or two) to become active
-* notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save results during a session, use "File -> Save project".
+* notice that the tool "produces 5 outputs". However, as noted in the initial comments above, these files only get generated if/when the user quits the tool. To save a model during a session, use "File -> Save project".
 
 .. image:: ./galaxy_imgs/pcstudio_ready_to_open.png
 * after the "Open" link appears, click it
@@ -53,25 +52,14 @@ use its tools. The one of interest for this tutorial is PhysiCell Studio.
 .. image:: ./galaxy_imgs/galaxy_pcstudio_0.png
 * click the `Run Tool` to open PhysiCell Studio in an adjacent tab of your browser
 
-Studio GUI settings
-*******************
-
-.. image:: ./galaxy_imgs/pcstudio_remote_settings_widget.png
-   :width: 600px
-* when the Studio appears in its own browser tab, its widgets will appear too small. To remedy this, click the "3 vertical dots" icon on the left border. It will display settings for the GUI.
-
-.. image:: ./galaxy_imgs/pcstudio_remote_resizing.png
-   :width: 600px
-* then select the "Scaling Mode" dropdown menu and select "Remote Resizing". This should improve the overall usability of the GUI.
+Studio overview
+***************
 
 .. image:: ./galaxy_imgs/pcstudio_run_sim0.png
 * to run the default simulation, click the Run tab and press the "Run simulation" button.
 
-Studio overview
-***************
-
 At this point, you should be able to follow instructions elsewhere for basic use of the Studio. 
-https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . HOWEVER, you will want to return to this page for Galaxy-specific instructions, especially regarding loading files and saving simulation results.
+https://physicell-studio.readthedocs.io/en/latest/guide.html#config-basics . However, you will want to return to this page for Galaxy-specific instructions, especially regarding saving (or loading) a project, or saving simulation results.
 
 Reconnect the Studio session
 ****************************
@@ -120,11 +108,12 @@ To load a previously saved project, use the `File -> Load project` menu option:
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj.png
    :width: 200px
 
-.. image:: ./galaxy_imgs/pcstudio_File_Load_proj_ui.png
-   :width: 500px
+This will display a file dialog of all .zip files in your History (it may take a few seconds if you have several).
+Note that a .zip suffix is not unique to project files (you can also zip up your output results, but do not try to
+"Load" those).
 
-.. image:: ./galaxy_imgs/pcstudio_File_Load_proj_msg1.png
-   :width: 400px
+.. image:: ./galaxy_imgs/file_load_project_ui.png
+   :width: 500px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj_msg2.png
    :width: 400px
