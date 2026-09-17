@@ -84,8 +84,11 @@ using the `File -> Save project` menu option:
 This will prompt you to name your project, e.g., `my_model.zip` (or whatever you choose to name it) 
 and will zip together the relevant files and copy the .zip to your History column on the main Galaxy panel.
 Note the "'PhysiCell' History" checkbox. If this is checked (which we recommend), your .zip will be copied into a
-Galaxy History named "PhysiCell". If that History does not exist, it will be created. (If you displaying a list of all
+Galaxy History named "PhysiCell". If that History does not exist, it will be created. (If you are displaying a list of all
 your Histories on the main Galaxy tab, you will need to refresh the tab before you will see the "PhysiCell" History).
+
+In summary, when presented with the initial dialog panel, you have the options to 1) check "PhysiCell" History if you want it saved there, 2) rename the base filename, and 3) suffix a timestamp onto the filename. Then press "Save .zip". Another dialog
+panel will pop up telling you what will happen and you can press "OK" (or "Cancel"). Then click "Close" on the original panel.
 
 .. image:: ./galaxy_imgs/pcstudio_File_Save_proj_PC_History_zip.png
    :width: 500px
