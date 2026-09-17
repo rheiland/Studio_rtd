@@ -83,12 +83,17 @@ using the `File -> Save project` menu option:
 
 This will prompt you to name your project, e.g., `my_model.zip` (or whatever you choose to name it) 
 and will zip together the relevant files and copy the .zip to your History column on the main Galaxy panel.
+Note the "'PhysiCell' History" checkbox. If this is checked (which we recommend), your .zip will be copied into a
+Galaxy History named "PhysiCell". If that History does not exist, it will be created. (If you displaying a list of all
+your Histories on the main Galaxy tab, you will need to refresh the tab before you will see the "PhysiCell" History).
 
-.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_zip.png
+.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_PC_History_zip.png
    :width: 500px
 
-.. image:: ./galaxy_imgs/pcstudio_File_Save_proj_msg2.png
-   :width: 500px
+You can switch from the "Unnamed" History to the "PhysiCell" History using one of the icons at the top of the History column.
+
+.. image:: ./galaxy_imgs/switch_histories.png
+   :width: 400px
 
 Note that it may take a few seconds for the `.zip` project to appear in your Galaxy History.
 If you click on that entry, it will expand and reveal a download 
@@ -113,7 +118,7 @@ This will display a file dialog of all .zip files in your History (it may take a
 Note that a .zip suffix is not unique to project files (you can also zip up your output results, but do not try to
 "Load" those).
 
-.. image:: ./galaxy_imgs/file_load_project_ui.png
+.. image:: ./galaxy_imgs/file_load_project_ui_new.png
    :width: 500px
 
 .. image:: ./galaxy_imgs/pcstudio_File_Load_proj_msg2.png
