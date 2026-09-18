@@ -171,9 +171,9 @@ directory.
 Saving simulation results
 *************************
 
-To save all simulation results, you can use the `Misc -> put on History -> all_output.zip` menu item. This can take some time, depending on how many output files you have.
+To save all simulation results, you can use the `File -> Save sim output` menu item. This can take some time, depending on how many output files you have. The same file naming options and saving to the "PhysiCell" History applies here too.
 
-.. image:: ./galaxy_imgs/put_all_output_zip.png
+.. image:: ./galaxy_imgs/save_all_output_zip.png
    :width: 350px
 
 Once it has been zipped and copied to your History, you can download it to your desktop computer:
